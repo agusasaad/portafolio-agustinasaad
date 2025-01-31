@@ -1,0 +1,36 @@
+.slider {
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 50px;
+  overflow: hidden;
+  background: var(--background);
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0) 90%
+  );
+}
+
+.slider .move {
+  display: flex;
+  width: calc(100px * 28);
+  animation: animacion 30s linear infinite;
+}
+
+@keyframes animacion {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100px * 14));
+  }
+}
+
+.slider .box {
+  height: auto;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
