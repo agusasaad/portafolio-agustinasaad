@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container .spinning_text {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  animation: spin 50s linear infinite;
+  position: relative;
+}
+
+.container .spinning_text .text_content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container .spinning_text .text_content span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: var(--paragraph);
+  font-size: 11px;
+  font-weight: 400;
+  transform-origin: 0 100px;
+  padding: 2px;
+}
+
+.container img {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
