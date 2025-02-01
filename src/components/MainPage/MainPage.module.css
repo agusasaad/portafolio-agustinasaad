@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  min-height: calc(100vh + 104px);
+  min-height: calc(100dvh + 104px);
   background-image: url("./../../assets/images/backgroundMainPage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,6 +10,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  /* border: 1px solid red; */
 }
 
 .content_text {
@@ -68,14 +69,13 @@
 
 @media (max-width: 1300px) {
   .content_text .content_title h1 {
-    font-size: 140px;
+    font-size: 130px;
+    letter-spacing: -9px;
+    line-height: 125px;
   }
 }
 
 @media (max-width: 768px) {
-  .container {
-    min-height: 100vh;
-  }
   .content_text span {
     font-size: 16px;
   }
