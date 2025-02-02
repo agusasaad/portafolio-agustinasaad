@@ -6,10 +6,13 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
 import Hamburguer from "@/assets/icons/Hamburguer";
+import Translate from "@/assets/icons/Translate";
+import ArrowDown from "@/assets/icons/ArrowDown";
 
 const NavBar = () => {
   const circleRef = useRef(null);
   const [showMenu, setShowMenu] = useState(false);
+  const [showMenuLanguague, setShowMenuLanguague] = useState(false);
 
   useEffect(() => {
     gsap.to(circleRef.current, {
@@ -63,6 +66,23 @@ const NavBar = () => {
             <li>Contact Me</li>
             <li>Contact Me</li>
           </Link>
+          <li className={styles.li_button}>
+            <button
+              aria-label="translate"
+              onClick={() => setShowMenuLanguague(!showMenuLanguague)}
+            >
+              <Translate />
+              <ArrowDown />
+            </button>
+            <div
+              className={`${styles.modal} ${
+                showMenuLanguague ? styles.showMenuLanguague : ""
+              }`}
+            >
+              <button>Español</button>
+              <button>English</button>
+            </div>
+          </li>
         </ul>
 
         <div className={styles.hamburguer_menu}>

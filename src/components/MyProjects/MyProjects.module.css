@@ -1,0 +1,66 @@
+.container {
+  width: 100%;
+  padding: 130px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container .content_title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content_title span {
+  color: var(--subtitle);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.content_title h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--title);
+  letter-spacing: -1.5px;
+  text-align: center;
+}
+
+.visit_git_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.visit_git_content p {
+  color: var(--paragraph);
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+}
+
+.visit_git_content button {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding: 0px 20px 0px 24px;
+  border-radius: 30px;
+  background: var(--title);
+  font-size: 1.125rem;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 18px;
+}
+
+.visit_git_content button i {
+  display: flex;
+  align-items: center;
+}

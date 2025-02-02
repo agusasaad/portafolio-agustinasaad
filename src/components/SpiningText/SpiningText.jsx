@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./SpiningText.module.css";
-import image_about_me from "@/assets/images/image_about_me.png";
+import image_about_me from "@/assets/images/image_profile.png";
 
 const SpiningText = () => {
   const text = "FRONTEND DEVELOPER - FRONTEND DEVELOPER - ";
@@ -23,13 +23,15 @@ const SpiningText = () => {
           ))}
         </div>
       </div>
-      <Image
-        src={image_about_me}
-        width={140}
-        height={148.85}
-        alt="image_about_me"
-        quality={100}
-      />
+      <div className={styles.container_image}>
+        <Image
+          src={image_about_me}
+          width={145}
+          height={145}
+          alt="image_about_me"
+          quality={100}
+        />
+      </div>
     </div>
   );
 };
