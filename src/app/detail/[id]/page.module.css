@@ -1,0 +1,115 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 900px;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content .cargo_and_date {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cargo_and_date span {
+  color: var(--subtitle);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.content p {
+  font-size: 16px;
+  color: var(--paragraph);
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.content h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--title);
+  letter-spacing: -1.5px;
+  line-height: 30px;
+}
+
+.content .responsibilities,
+.content .technologies {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content .responsibilities span,
+.content .technologies span {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.technologies .text_and_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+
+.text_and_buttons .container_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.text_and_buttons .container_button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 8px 16px;
+  border: 1px solid #222;
+  background-color: #111;
+  border-radius: 0.375rem;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .content h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding-top: 0px;
+    padding: 120px 15px;
+  }
+
+  .content {
+    padding-top: 0px;
+  }
+
+  .cargo_and_date span {
+    color: var(--subtitle);
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
