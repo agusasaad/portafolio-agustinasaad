@@ -1,5 +1,7 @@
 import { useTranslation } from "@/Hooks/useTranslations";
 import SymbioNetCard from "@/assets/images/SymbioNet/Symbionet.png";
+import SymbionNetFirtBanner from "@/assets/images/SymbioNet/first_banner.png";
+import SymbioNet from "@/assets/images/SymbioNet/symbionet_detail.png";
 import portfolioModal from "@/assets/images/Portfolio/headerModalPortfolio.png";
 import portfolioCard from "@/assets/images/Portfolio/cardPortfolio.png";
 import portfolioCapture_1 from "@/assets/images/Portfolio/imageRepresentPortfolio.jpg";
@@ -36,12 +38,13 @@ export const getProjects = () => {
       cargo: t.projects.projectDetails.symbioNet.cargo,
       date: t.projects.projectDetails.symbioNet.date,
       imageCard: SymbioNetCard,
-      imageModal: portfolioModal,
+      imageModal: SymbionNetFirtBanner,
       paragraph_1: t.projects.projectDetails.symbioNet.paragraph_1,
       paragraph_2: t.projects.projectDetails.symbioNet.paragraph_2,
-      technologies: "Javascript · React · ChakraUi · GSAP",
-      repository: "https://github.com/agusasaad/Portafolio",
-      img: portfolioCapture_1,
+      technologies: "Javascript · React · Next.js · CSS Modules · GSAP",
+      repository: "https://github.com/agusasaad/teamBoost",
+      web: "https://www.symbionet.tech/",
+      img: SymbioNet,
     },
     {
       id: 3,

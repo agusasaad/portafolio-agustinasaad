@@ -64,3 +64,20 @@
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 425px) {
+  .container {
+    gap: 20px;
+    padding-top: 100px;
+  }
+  .content_title span {
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--title);
+    letter-spacing: -1.5px;
+    text-align: center;
+  }
+  .content_title h2 {
+    display: none;
+  }
+}

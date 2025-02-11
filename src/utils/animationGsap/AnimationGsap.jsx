@@ -75,8 +75,8 @@ export const aboutMeAnimation = ({
     delay: 0.2,
     scrollTrigger: {
       trigger: container.current,
-      start: "top-=400 top",
-      end: "bottom top",
+      start: "top 80%",
+      end: "bottom bottom",
     },
   });
 
@@ -89,8 +89,8 @@ export const aboutMeAnimation = ({
     delay: 0.5,
     scrollTrigger: {
       trigger: container.current,
-      start: "top-=400 top",
-      end: "bottom top",
+      start: "top 80%",
+      end: "bottom bottom",
     },
   });
 };

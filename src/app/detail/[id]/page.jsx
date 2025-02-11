@@ -1,5 +1,5 @@
 "use client";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import styles from "./page.module.css";
 import { getProjects } from "@/utils/info/Info";
 import Image from "next/image";
@@ -7,12 +7,29 @@ import GitHub from "@/assets/icons/GitHub";
 import Url from "@/assets/icons/Url";
 import Link from "next/link";
 import { useTranslation } from "@/Hooks/useTranslations";
+import Back from "@/assets/icons/Back";
+import Next from "@/assets/icons/Next";
 
 const DetailPage = () => {
   const { id } = useParams();
   const findProject = getProjects().find((item) => item.id === Number(id));
 
   const t = useTranslation();
+
+  const router = useRouter();
+
+  const handleBack = () => {
+    Number(id) === 1
+      ? router.push("/detail/5")
+      : router.push(`/detail/${Number(id) - 1}`);
+  };
+
+  const handleNext = () => {
+    Number(id) === 5
+      ? router.push("/detail/1")
+      : router.push(`/detail/${Number(id) + 1}`);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -41,10 +58,12 @@ const DetailPage = () => {
                 <GitHub color="white" width="20px" height="20px" />
                 {t.detail_projects.button_1}
               </Link>
-              <Link href={findProject.repository} target="_blank">
-                <Url color="white" width="20px" height="20px" />
-                Web
-              </Link>
+              {findProject?.web && (
+                <Link href={findProject.web} target="_blank">
+                  <Url color="white" width="20px" height="20px" />
+                  Web
+                </Link>
+              )}
             </div>
           </div>
         </div>
@@ -54,6 +73,16 @@ const DetailPage = () => {
           width={1200}
           height={500}
         />
+        <div className={styles.container_button_page}>
+          <button aria-label="button-back" onClick={handleBack}>
+            <Back />
+            {t.detail_projects.back}
+          </button>
+          <button aria-label="button-next" onClick={handleNext}>
+            {t.detail_projects.next}
+            <Next />
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -62,7 +62,7 @@ const NavBar = () => {
             <li>{t.navbar.home}</li>
             <li>{t.navbar.home}</li>
           </Link>
-          <Link href={"/projects"}>
+          <Link href={"/detail/1"}>
             <li>{t.navbar.projects}</li>
             <li>{t.navbar.projects}</li>
           </Link>

@@ -44,7 +44,7 @@ export const translations = {
     },
     projects: {
       subtitle: "Proyectos",
-      title: "Seleccione proyecto",
+      title: "Seleccione un proyecto",
       paragraph_git_hub_1: "¡Gracias por explorar mis trabajos!",
       paragraph_git_hub_2: "Descubre más en mi GitHub.",
       button: "Visita mi GitHub",
@@ -52,7 +52,7 @@ export const translations = {
         personalPortfolio: {
           name: "Portafolio Personal",
           cargo: "Desarrollador Front End",
-          date: "Jun 2024",
+          date: "Nov 2024",
           paragraph_1:
             "En este portafolio, encontrarás una selección cuidadosamente curada de mis trabajos más representativos. Cada proyecto ha sido una oportunidad para aplicar mis conocimientos y habilidades de manera creativa y efectiva. Cada proyecto cuenta una historia única sobre mi enfoque, habilidades para resolver problemas y atención al detalle.",
           paragraph_2:
@@ -64,10 +64,10 @@ export const translations = {
           cargo: "Desarrollador Front End",
           date: "Jun 2024",
           paragraph_1:
-            "En este portafolio, encontrarás una selección cuidadosamente curada de mis trabajos más representativos. Cada proyecto ha sido una oportunidad para aplicar mis conocimientos y habilidades de manera creativa y efectiva. Cada proyecto cuenta una historia única sobre mi enfoque, habilidades para resolver problemas y atención al detalle.",
+            "SymbioNet. es una plataforma diseñada para ofrecer soluciones tecnológicas a medida, incluyendo desarrollo web, consultoría IT y automatización de procesos. La web fue creada con un enfoque en la usabilidad y la claridad, combinando un diseño moderno con una estructura optimizada para destacar los servicios y valores de la empresa. Cada sección ha sido cuidadosamente diseñada para garantizar una navegación intuitiva y una experiencia de usuario fluida.",
           paragraph_2:
-            "A lo largo del desarrollo de mi portafolio, lideré el diseño y la implementación de la funcionalidad utilizando React y JavaScript, incorporando bibliotecas como Chakra UI y GSAP para una interfaz de usuario atractiva y animaciones dinámicas. Me enfoqué en el diseño responsivo, la optimización del rendimiento y la presentación efectiva del contenido para mostrar mis habilidades y proyectos de manera clara y concisa.",
-          technologies: "Javascript · React · ChakraUi · GSAP",
+            "En este proyecto, me encargué del diseño UX/UI, asegurando que la interfaz fuera visualmente atractiva y funcional. Desarrollé y estructuré los componentes de la página utilizando Next.js, aplicando CSS puro y CSS Modules para una estilización modular y eficiente. Implementé animaciones con GSAP para mejorar la interacción y la experiencia del usuario, enfocándome en la coherencia visual, el rendimiento optimizado y una navegación intuitiva.",
+          technologies: "JavaScript · React.js · Next.js · CSS Modules · GSAP",
         },
         weDevelop: {
           name: "We Develop",
@@ -175,11 +175,12 @@ export const translations = {
         symbioNet: {
           name: "SymbioNet",
           cargo: "Front End Developer",
-          date: "Jun 2024",
+          date: "Nov 2024",
           paragraph_1:
-            "Within this portfolio, you'll find a carefully curated selection of my most representative works. Each project has been an opportunity to apply my knowledge and skills creatively and effectively. Each project tells a unique story about my approach, problem-solving abilities, and attention to detail.",
+            "SymbioNet. is a platform designed to provide tailored technological solutions, including web development, IT consulting, and process automation. The website was created with a focus on usability and clarity, combining a modern design with an optimized structure to highlight the company's services and values. Each section has been carefully designed to ensure intuitive navigation and a seamless user experience.",
+
           paragraph_2:
-            "Throughout the development of my portfolio, I spearheaded the design and functionality implementation using React and JavaScript, incorporating libraries like Chakra UI and GSAP for an engaging user interface and dynamic animations. I focused on responsive layout, performance optimization, and effective content presentation to showcase my skills and projects clearly and concisely.",
+            "In this project, I was responsible for the UX/UI design, ensuring that the interface was both visually appealing and functional. I developed and structured the page components using Next.js, applying pure CSS and CSS Modules for a modular and efficient styling approach. I implemented animations with GSAP to enhance interaction and user experience, focusing on visual consistency, performance optimization, and intuitive navigation.",
           technologies: "Javascript · React · ChakraUi · GSAP",
         },
         weDevelop: {
