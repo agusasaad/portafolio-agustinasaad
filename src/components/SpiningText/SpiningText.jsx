@@ -1,17 +1,22 @@
+import { forwardRef } from "react";
 import Image from "next/image";
 import styles from "./SpiningText.module.css";
 import image_about_me from "@/assets/images/image_profile.png";
+import { useTranslation } from "@/Hooks/useTranslations";
 
-const SpiningText = () => {
+const SpiningText = forwardRef(function SpiningText(props, ref) {
   const text = "FRONTEND DEVELOPER - FRONTEND DEVELOPER - ";
   const length = text.length;
   const deg = 360 / length;
 
+  //Zustand
+  const t = useTranslation();
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} ref={ref}>
       <div className={styles.spinning_text}>
         <div className={styles.text_content}>
-          {text.split("").map((letter, index) => (
+          {t.aboutMe.spinnin.split("").map((letter, index) => (
             <span
               key={index}
               style={{
@@ -34,6 +39,6 @@ const SpiningText = () => {
       </div>
     </div>
   );
-};
+});
 
 export default SpiningText;
