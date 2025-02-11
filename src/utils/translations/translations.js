@@ -104,6 +104,13 @@ export const translations = {
         },
       },
     },
+    detail_projects: {
+      title_1: "Responsabilidades",
+      title_2: "Tecnologías",
+      button_1: "Repositorio",
+      next: "Siguiente",
+      back: "Atras",
+    },
   },
   en: {
     navbar: {
@@ -209,6 +216,14 @@ export const translations = {
             "Javascript · React · Redux · Node.js · Express · Postgresql · Sequelize",
         },
       },
+    },
+
+    detail_projects: {
+      title_1: "Responsibilities",
+      title_2: "Technologies",
+      button_1: "Repository",
+      next: "Next",
+      back: "Back",
     },
   },
 };

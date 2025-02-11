@@ -6,12 +6,13 @@ import Image from "next/image";
 import GitHub from "@/assets/icons/GitHub";
 import Url from "@/assets/icons/Url";
 import Link from "next/link";
+import { useTranslation } from "@/Hooks/useTranslations";
 
 const DetailPage = () => {
   const { id } = useParams();
   const findProject = getProjects().find((item) => item.id === Number(id));
-  console.log(findProject);
 
+  const t = useTranslation();
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -28,17 +29,17 @@ const DetailPage = () => {
           height={500}
         />
         <div className={styles.responsibilities}>
-          <span>Responsibilities</span>
+          <span>{t.detail_projects.title_1}</span>
           <p>{findProject.paragraph_2}</p>
         </div>
         <div className={styles.technologies}>
-          <span>Technologies</span>
+          <span>{t.detail_projects.title_2}</span>
           <div className={styles.text_and_buttons}>
             <p>{findProject.technologies}</p>
             <div className={styles.container_button}>
               <Link href={findProject.repository} target="_blank">
                 <GitHub color="white" width="20px" height="20px" />
-                Repository
+                {t.detail_projects.button_1}
               </Link>
               <Link href={findProject.repository} target="_blank">
                 <Url color="white" width="20px" height="20px" />
