@@ -7,7 +7,7 @@
 
 .slider .move {
   display: flex;
-  width: calc(515px * 16);
+  width: calc(465px * 10);
   animation: animacion 30s linear infinite;
 }
 
@@ -16,16 +16,17 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-515px * 4));
+    transform: translateX(calc(-465px * 5));
   }
 }
 
 .slider .card {
   height: auto;
-  width: 515px;
+  width: 465px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  will-change: transform;
 }
 
 .slider .card:hover .content_image img {
