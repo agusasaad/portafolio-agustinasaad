@@ -1,20 +1,33 @@
+"use client";
 import GitHub from "@/assets/icons/GitHub";
 import CarrucelProject from "./CarrucelProject/CarrucelProject";
 import styles from "./MyProjects.module.css";
+import { useEffect, useRef } from "react";
+import { projectAnimation } from "@/utils/animationGsap/AnimationGsap";
+import { useTranslation } from "@/Hooks/useTranslations";
 
 const MyProjects = () => {
+  const t = useTranslation();
+
+  const container = useRef(null);
+  const title = useRef(null);
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    projectAnimation({ container, title, cardsRef });
+  }, []);
   return (
-    <section className={styles.container}>
-      <div className={styles.content_title}>
-        <span>Projects</span>
-        <h2>Select work</h2>
+    <section className={styles.container} ref={container}>
+      <div className={styles.content_title} ref={title}>
+        <span>{t.projects.subtitle}</span>
+        <h2>{t.projects.title}</h2>
       </div>
-      <CarrucelProject />
+      <CarrucelProject ref={cardsRef} />
       <div className={styles.visit_git_content}>
-        <p>Thanks for exploring my works!</p>
-        <p>Check out more on my GitHub.</p>
+        <p>{t.projects.paragraph_git_hub_1}</p>
+        <p>{t.projects.paragraph_git_hub_2}</p>
         <button>
-          Visit Github
+          {t.projects.button}
           <i>
             <GitHub />
           </i>
