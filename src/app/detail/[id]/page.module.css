@@ -112,4 +112,9 @@
     font-weight: 300;
     font-size: 16px;
   }
+
+  .content_text p {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
