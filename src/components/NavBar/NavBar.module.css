@@ -157,33 +157,6 @@
   align-items: center;
 }
 
-.li_button .modal {
-  border: 1px solid rgb(13, 13, 13);
-  background: #090909;
-  width: 100px;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  display: none;
-  flex-direction: column;
-  padding: 3px;
-  border-radius: 5px;
-}
-
-.li_button .modal.showMenuLanguague {
-  display: flex;
-}
-
-.modal button {
-  width: 100%;
-  color: white;
-  padding: 10px 20px;
-}
-
-.modal .button:hover {
-  background-color: aliceblue;
-}
-
 .nav_bar .hamburguer_menu {
   display: none;
   align-items: center;
@@ -245,5 +218,9 @@
   .list a li {
     transition: transform 0.3s ease;
     font-size: 18px;
+  }
+
+  .list .li_button {
+    display: none;
   }
 }
