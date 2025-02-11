@@ -10,7 +10,7 @@ const SwitchToggle = ({ id, name, onChange, checked }) => {
         name={name}
         value={name}
         checked={checked}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={onChange}
       />
       <label className={styles.toggle_label} htmlFor={id} />
     </div>
