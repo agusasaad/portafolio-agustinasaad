@@ -1,0 +1,35 @@
+.slider {
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  padding: 150px 0px 50px 0px;
+}
+
+.slider .move {
+  display: flex;
+  width: calc(843px * 10);
+  animation: animacion 30s linear infinite;
+}
+
+@keyframes animacion {
+  0% {
+    transform: translateX(calc(-843px * 5));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slider .box {
+  width: 843px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  font-size: 140px;
+  font-weight: 400;
+  text-wrap: nowrap;
+  letter-spacing: -10px;
+  gap: 70px;
+  will-change: transform;
+}
