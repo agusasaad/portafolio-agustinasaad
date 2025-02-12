@@ -44,8 +44,8 @@
 
 @media (max-width: 425px) {
   .slider img {
-    width: 330px;
-    height: 400px;
+    width: 340px;
+    height: 450px;
     border-radius: 15px;
     object-fit: cover;
     object-position: center;
