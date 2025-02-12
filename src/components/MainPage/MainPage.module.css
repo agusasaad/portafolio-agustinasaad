@@ -1,8 +1,10 @@
 .container {
   width: 100%;
+  max-width: 1440px;
+
   height: auto;
   padding: 200px 0px 100px 0px;
-  background-image: url("./../../assets/images/backgroundMainPage.jpg");
+  background-image: url('./../../assets/images/backgroundMainPage.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
