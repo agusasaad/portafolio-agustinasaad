@@ -136,7 +136,6 @@ export const projectAnimation = ({
   title,
   cardsRef,
   cardMobileRef,
-  container_button_git,
 }) => {
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -189,21 +188,4 @@ export const projectAnimation = ({
       "-=0.5"
     );
   }
-
-  gsap.fromTo(
-    container_button_git.current,
-    { y: 100, opacity: 0, visibility: "hidden" },
-    {
-      y: 0,
-      opacity: 1,
-      visibility: "visible",
-      duration: 0.8,
-      ease: "power2",
-      scrollTrigger: {
-        trigger: container.current,
-        start: "top+=200px top",
-        end: "bottom top",
-      },
-    }
-  );
 };

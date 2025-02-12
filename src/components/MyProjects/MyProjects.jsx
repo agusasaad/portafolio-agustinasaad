@@ -14,7 +14,6 @@ const MyProjects = () => {
   const title = useRef(null);
   const cardsRef = useRef([]);
   const cardMobileRef = useRef([]);
-  const container_button_git = useRef(null);
 
   useEffect(() => {
     projectAnimation({
@@ -22,7 +21,6 @@ const MyProjects = () => {
       title,
       cardsRef,
       cardMobileRef,
-      container_button_git,
     });
   }, []);
   return (
@@ -36,7 +34,7 @@ const MyProjects = () => {
       </div>
       <CarrucelProject ref={cardsRef} />
       <CarrucelMobile ref={cardMobileRef} />
-      <div className={styles.visit_git_content} ref={container_button_git}>
+      <div className={styles.visit_git_content}>
         <p>{t.projects.paragraph_git_hub_1}</p>
         <p>{t.projects.paragraph_git_hub_2}</p>
         <button>
