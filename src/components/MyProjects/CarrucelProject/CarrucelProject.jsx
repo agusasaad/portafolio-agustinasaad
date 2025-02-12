@@ -24,8 +24,6 @@ const CarrucelProject = forwardRef((props, ref) => {
                 width={700}
                 height={700}
                 alt={project.name}
-                quality={100}
-                priority={true}
               />
             </div>
           </Link>
