@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar/NavBar";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import ButtonLanguague from "@/components/ButtonLanguague/ButtonLanguague";
+import CursorPoiter from "@/components/CursorPoiter/CursorPoiter";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
         <NavBar />
         {children}
         <ButtonLanguague />
+        <CursorPoiter />
       </body>
     </html>
   );

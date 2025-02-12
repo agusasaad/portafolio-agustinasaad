@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'AvenirNextBold';
-  src: url('./../Fonts/AvenirNext-Bold.ttf') format('truetype');
+  font-family: "AvenirNextBold";
+  src: url("./../Fonts/AvenirNext-Bold.ttf") format("truetype");
 }
 
 :root {
@@ -9,7 +9,7 @@
   --title: #ffffff;
   --paragraph: #808080;
   --icon: #9b9db4;
-  --main-title: 'AvenirNextBold', sans-serif;
+  --main-title: "AvenirNextBold", sans-serif;
 }
 
 * {
@@ -17,6 +17,7 @@
   padding: 0;
   margin: 0;
   scrollbar-width: none;
+  cursor: none;
 }
 
 html,
@@ -29,6 +30,7 @@ body {
   align-items: center;
   color: white;
   position: relative;
+  cursor: none;
 }
 
 a {
@@ -37,7 +39,6 @@ a {
 }
 
 button {
-  cursor: pointer;
   font-family: inherit;
   border: none;
   background: transparent;
