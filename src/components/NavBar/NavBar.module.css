@@ -81,6 +81,7 @@
   color: var(--paragraph);
   font-size: 14px;
   font-weight: 300;
+  cursor: none;
 }
 
 .text_info .content_p a:hover {
@@ -93,7 +94,6 @@
   display: flex;
   align-items: center;
 }
-
 .content_p .circle_green {
   width: 7px;
   height: 7px;
@@ -126,6 +126,7 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
+  cursor: none;
 }
 
 .list a li {
@@ -149,7 +150,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  cursor: pointer;
+  cursor: none;
 }
 
 .list .li_button button {

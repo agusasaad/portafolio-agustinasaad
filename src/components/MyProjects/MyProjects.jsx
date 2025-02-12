@@ -6,9 +6,12 @@ import { useEffect, useRef } from "react";
 import { projectAnimation } from "@/utils/animationGsap/AnimationGsap";
 import { useTranslation } from "@/Hooks/useTranslations";
 import CarrucelMobile from "./CarrucelMobile/CarrucelMobile";
+import { useLanguageStore } from "@/app/store";
+import Link from "next/link";
 
 const MyProjects = () => {
   const t = useTranslation();
+  const { scaling, setScaling } = useLanguageStore();
 
   const container = useRef(null);
   const title = useRef(null);
@@ -37,12 +40,18 @@ const MyProjects = () => {
       <div className={styles.visit_git_content}>
         <p>{t.projects.paragraph_git_hub_1}</p>
         <p>{t.projects.paragraph_git_hub_2}</p>
-        <button>
+        <Link
+          href={"https://github.com/agusasaad?tab=repositories"}
+          target="_blank"
+          className={styles.link_git_hub}
+          onMouseEnter={() => setScaling(true)}
+          onMouseLeave={() => setScaling(false)}
+        >
           {t.projects.button}
           <i>
             <GitHub />
           </i>
-        </button>
+        </Link>
       </div>
     </section>
   );

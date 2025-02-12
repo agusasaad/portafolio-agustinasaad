@@ -1,3 +1,4 @@
+"use client";
 import MainPage from "@/components/MainPage/MainPage";
 import styles from "./page.module.css";
 import AboutMe from "@/components/AboutMe/AboutMe";

@@ -4,6 +4,8 @@ import SpiningText from "../SpiningText/SpiningText";
 import styles from "./AboutMe.module.css";
 import { aboutMeAnimation } from "@/utils/animationGsap/AnimationGsap";
 import { useTranslation } from "@/Hooks/useTranslations";
+import { useLanguageStore } from "@/app/store";
+import Link from "next/link";
 
 const AboutMe = () => {
   const container = useRef(null);
@@ -14,6 +16,7 @@ const AboutMe = () => {
 
   //Zustand
   const t = useTranslation();
+  const { scaling, setScaling } = useLanguageStore();
 
   useEffect(() => {
     aboutMeAnimation({ container, imageProfile, title, paragraph, button });
@@ -29,7 +32,16 @@ const AboutMe = () => {
         <p>{t.aboutMe.paragraph_3}</p>
       </div>
       <div className={styles.button_container} ref={button}>
-        <button>Curriculum Vitae</button>
+        <Link
+          className={styles.button_cv}
+          href={
+            "https://drive.google.com/file/d/1V6KU4kVrJnvWpc1AAZqIb6-YH5xdsx7l/view?usp=sharing"
+          }
+          onMouseEnter={() => setScaling(true)}
+          onMouseLeave={() => setScaling(false)}
+        >
+          Curriculum Vitae
+        </Link>
       </div>
     </section>
   );

@@ -3,10 +3,13 @@ import { getProjects } from "@/utils/info/Info"; // Importa la función getProje
 import styles from "./CarrucelProject.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguageStore } from "@/app/store";
 
 const CarrucelProject = forwardRef((props, ref) => {
   const projects = getProjects();
   const copyProject = [...projects, ...projects];
+
+  const { scaling, setScaling } = useLanguageStore();
 
   return (
     <div className={styles.slider}>
@@ -17,6 +20,8 @@ const CarrucelProject = forwardRef((props, ref) => {
             key={index}
             className={styles.card}
             ref={(el) => (ref.current[index] = el)}
+            onMouseEnter={() => setScaling(true)}
+            onMouseLeave={() => setScaling(false)}
           >
             <div className={styles.content_image}>
               <Image

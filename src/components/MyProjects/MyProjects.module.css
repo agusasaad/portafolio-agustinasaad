@@ -63,7 +63,7 @@
   text-align: center;
 }
 
-.visit_git_content button {
+.visit_git_content .link_git_hub {
   height: 48px;
   display: flex;
   justify-content: center;
@@ -76,9 +76,11 @@
   font-size: 16px;
   font-weight: 500;
   margin-top: 18px;
+  cursor: none;
+  color: black;
 }
 
-.visit_git_content button i {
+.visit_git_content .link_git_hub i {
   display: flex;
   align-items: center;
 }

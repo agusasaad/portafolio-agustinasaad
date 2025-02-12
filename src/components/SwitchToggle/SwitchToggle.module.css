@@ -21,7 +21,7 @@
   height: 18px; /* Reducido */
   background-color: #acacac;
   border-radius: 34px;
-  cursor: pointer;
+  cursor: none;
   transition: background-color 0.3s;
 }
 
