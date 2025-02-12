@@ -44,3 +44,9 @@
 .card .content_image img {
   transition: transform 0.3s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  .slider {
+    display: none;
+  }
+}

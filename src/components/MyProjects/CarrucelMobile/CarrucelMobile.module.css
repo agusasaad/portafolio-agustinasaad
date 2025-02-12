@@ -1,13 +1,13 @@
 .slider {
   overflow: scroll;
-  display: flex;
+  display: none;
   align-items: center;
   scrollbar-width: none;
 }
 
 .slider img {
-  width: 330px;
-  height: 400px;
+  width: 500px;
+  height: 550px;
   border-radius: 15px;
   object-fit: cover;
   object-position: center;
@@ -21,4 +21,30 @@
   gap: 15px;
   padding: 0px 15px;
   overflow-y: hidden;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider img {
+    width: 400px;
+    height: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .slider img {
+    width: 330px;
+    height: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+  }
 }

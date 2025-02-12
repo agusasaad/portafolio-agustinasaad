@@ -26,7 +26,7 @@ const MyProjects = () => {
         </span>
         <h2>{t.projects.title}</h2>
       </div>
-      {/* <CarrucelProject ref={cardsRef} /> */}
+      <CarrucelProject ref={cardsRef} />
       <CarrucelMobile ref={cardsRef} />
       <div className={styles.visit_git_content}>
         <p>{t.projects.paragraph_git_hub_1}</p>
