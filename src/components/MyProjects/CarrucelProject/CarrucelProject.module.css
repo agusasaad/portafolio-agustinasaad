@@ -43,6 +43,10 @@
 
 .card .content_image img {
   transition: transform 0.3s ease-in-out;
+  width: 550px;
+  height: 650px;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media (max-width: 1300px) {

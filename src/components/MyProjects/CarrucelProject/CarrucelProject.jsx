@@ -21,10 +21,11 @@ const CarrucelProject = forwardRef((props, ref) => {
             <div className={styles.content_image}>
               <Image
                 src={project.imageCard}
-                width={550}
-                height={650}
-                style={{ objectFit: "cover", objectPosition: "center" }}
+                width={700}
+                height={700}
                 alt={project.name}
+                quality={100}
+                priority={true}
               />
             </div>
           </Link>
