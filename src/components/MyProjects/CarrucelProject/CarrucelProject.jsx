@@ -1,12 +1,12 @@
-import { forwardRef } from 'react'
-import { getProjects } from '@/utils/info/Info' // Importa la función getProjects
-import styles from './CarrucelProject.module.css'
-import Image from 'next/image'
-import Link from 'next/link'
+import { forwardRef } from "react";
+import { getProjects } from "@/utils/info/Info"; // Importa la función getProjects
+import styles from "./CarrucelProject.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
 const CarrucelProject = forwardRef((props, ref) => {
-  const projects = getProjects()
-  const copyProject = [...projects, ...projects]
+  const projects = getProjects();
+  const copyProject = [...projects, ...projects];
 
   return (
     <div className={styles.slider}>
@@ -23,7 +23,7 @@ const CarrucelProject = forwardRef((props, ref) => {
                 src={project.imageCard}
                 width={550}
                 height={650}
-                style={{ objectFit: 'cover', objectPosition: 'center' }}
+                style={{ objectFit: "cover", objectPosition: "center" }}
                 alt={project.name}
               />
             </div>
@@ -31,7 +31,7 @@ const CarrucelProject = forwardRef((props, ref) => {
         ))}
       </div>
     </div>
-  )
-})
+  );
+});
 
-export default CarrucelProject
+export default CarrucelProject;

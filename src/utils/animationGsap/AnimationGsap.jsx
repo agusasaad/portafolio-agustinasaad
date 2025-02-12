@@ -131,7 +131,13 @@ export const servicesAnimation = ({ container, title, cardsRef }) => {
   );
 };
 //Animaciones MyProjects
-export const projectAnimation = ({ container, title, cardsRef }) => {
+export const projectAnimation = ({
+  container,
+  title,
+  cardsRef,
+  cardMobileRef,
+  container_button_git,
+}) => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: container.current,
@@ -150,8 +156,42 @@ export const projectAnimation = ({ container, title, cardsRef }) => {
       duration: 0.8,
       ease: "power2",
     }
-  ).fromTo(
-    cardsRef.current,
+  );
+
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Animación para móviles
+    tl.fromTo(
+      cardMobileRef.current,
+      { y: 100, opacity: 0, visibility: "hidden" },
+      {
+        y: 0,
+        opacity: 1,
+        visibility: "visible",
+        duration: 0.8,
+        ease: "power2",
+        stagger: 0.2,
+      },
+      "-=0.5"
+    );
+  } else {
+    // Animación para pantallas grandes
+    tl.fromTo(
+      cardsRef.current,
+      { y: 100, opacity: 0, visibility: "hidden" },
+      {
+        y: 0,
+        opacity: 1,
+        visibility: "visible",
+        duration: 0.8,
+        ease: "power2",
+        stagger: 0.2,
+      },
+      "-=0.5"
+    );
+  }
+
+  gsap.fromTo(
+    container_button_git.current,
     { y: 100, opacity: 0, visibility: "hidden" },
     {
       y: 0,
@@ -159,8 +199,11 @@ export const projectAnimation = ({ container, title, cardsRef }) => {
       visibility: "visible",
       duration: 0.8,
       ease: "power2",
-      stagger: 0.2,
-    },
-    "-=0.5"
+      scrollTrigger: {
+        trigger: container.current,
+        start: "top+=200px top",
+        end: "bottom top",
+      },
+    }
   );
 };

@@ -14,6 +14,9 @@ import driversCapture_1 from "@/assets/images/Drivers/Capture_1.jpg";
 import weDevelopCard from "@/assets/images/WeDevelop/CardWeDevelop.png";
 import weDevelopModal from "@/assets/images/WeDevelop/headerModalWeDevelop.png";
 import weCapture_1 from "@/assets/images/WeDevelop/capture_1.png";
+import grupoZuritaCard from "@/assets/images/GrupoZurita/GrupoZuritaCard.png";
+import grupoZuritaBanner from "@/assets/images/GrupoZurita/grupoZuritaBanner.png";
+import grupoZuritaWeb from "@/assets/images/GrupoZurita/paginaWebZurita.png";
 
 export const getProjects = () => {
   const t = useTranslation();
@@ -21,19 +24,6 @@ export const getProjects = () => {
   return [
     {
       id: 1,
-      name: t.projects.projectDetails.personalPortfolio.name,
-      cargo: t.projects.projectDetails.personalPortfolio.cargo,
-      date: t.projects.projectDetails.personalPortfolio.date,
-      imageCard: portfolioCard,
-      imageModal: portfolioModal,
-      paragraph_1: t.projects.projectDetails.personalPortfolio.paragraph_1,
-      paragraph_2: t.projects.projectDetails.personalPortfolio.paragraph_2,
-      technologies: "Javascript · React · ChakraUi · GSAP",
-      repository: "https://github.com/agusasaad/Portafolio",
-      img: portfolioCapture_1,
-    },
-    {
-      id: 2,
       name: t.projects.projectDetails.symbioNet.name,
       cargo: t.projects.projectDetails.symbioNet.cargo,
       date: t.projects.projectDetails.symbioNet.date,
@@ -47,7 +37,37 @@ export const getProjects = () => {
       img: SymbioNet,
     },
     {
+      id: 2,
+      name: t.projects.projectDetails.drivers.name,
+      cargo: t.projects.projectDetails.drivers.cargo,
+      date: t.projects.projectDetails.drivers.date,
+      imageCard: driverCard,
+      imageModal: driversModal,
+      paragraph_1: t.projects.projectDetails.drivers.paragraph_1,
+      paragraph_2: t.projects.projectDetails.drivers.paragraph_2,
+      technologies:
+        "Javascript · React · Redux · Node.js · Express · Postgresql · Sequelize",
+      repository: "https://github.com/agusasaad/Drivers",
+      img: driversCapture_1,
+    },
+
+    {
       id: 3,
+      name: t.projects.projectDetails.posadaMawida.name,
+      cargo: t.projects.projectDetails.posadaMawida.cargo,
+      date: t.projects.projectDetails.posadaMawida.date,
+      imageCard: mawidaCard,
+      imageModal: posadaModal,
+      paragraph_1: t.projects.projectDetails.posadaMawida.paragraph_1,
+      paragraph_2: t.projects.projectDetails.posadaMawida.paragraph_2,
+      technologies:
+        "Javascript · ReactJs · chakraUi · Redux · Node.js · Express · MongoDB",
+      repository: "https://github.com/Freetzen/Menu-Posada-Mawida",
+      img: PosadaCapture_1,
+    },
+
+    {
+      id: 4,
       name: t.projects.projectDetails.weDevelop.name,
       cargo: t.projects.projectDetails.weDevelop.cargo,
       date: t.projects.projectDetails.weDevelop.date,
@@ -61,32 +81,31 @@ export const getProjects = () => {
       img: weCapture_1,
     },
     {
-      id: 4,
-      name: t.projects.projectDetails.posadaMawida.name,
-      cargo: t.projects.projectDetails.posadaMawida.cargo,
-      date: t.projects.projectDetails.posadaMawida.date,
-      imageCard: mawidaCard,
-      imageModal: posadaModal,
-      paragraph_1: t.projects.projectDetails.posadaMawida.paragraph_1,
-      paragraph_2: t.projects.projectDetails.posadaMawida.paragraph_2,
-      technologies:
-        "Javascript · ReactJs · chakraUi · Redux · Node.js · Express · MongoDB",
-      repository: "https://github.com/Freetzen/Menu-Posada-Mawida",
-      img: PosadaCapture_1,
+      id: 5,
+      name: t.projects.projectDetails.weDevelop.name,
+      cargo: t.projects.projectDetails.weDevelop.cargo,
+      date: t.projects.projectDetails.weDevelop.date,
+      imageCard: grupoZuritaCard,
+      imageModal: grupoZuritaBanner,
+      paragraph_1: t.projects.projectDetails.weDevelop.paragraph_1,
+      paragraph_2: t.projects.projectDetails.weDevelop.paragraph_2,
+      technologies: "Javascript · React · Next.js · CSS Modules · GSAP",
+      repository: "https://github.com/Freetzen/WeDevelop",
+      web: "https://grupo-zurita.vercel.app/",
+      img: grupoZuritaWeb,
     },
     {
-      id: 5,
-      name: t.projects.projectDetails.drivers.name,
-      cargo: t.projects.projectDetails.drivers.cargo,
-      date: t.projects.projectDetails.drivers.date,
-      imageCard: driverCard,
-      imageModal: driversModal,
-      paragraph_1: t.projects.projectDetails.drivers.paragraph_1,
-      paragraph_2: t.projects.projectDetails.drivers.paragraph_2,
-      technologies:
-        "Javascript · React · Redux · Node.js · Express · Postgresql · Sequelize",
-      repository: "https://github.com/agusasaad/Drivers",
-      img: driversCapture_1,
+      id: 6,
+      name: t.projects.projectDetails.personalPortfolio.name,
+      cargo: t.projects.projectDetails.personalPortfolio.cargo,
+      date: t.projects.projectDetails.personalPortfolio.date,
+      imageCard: portfolioCard,
+      imageModal: portfolioModal,
+      paragraph_1: t.projects.projectDetails.personalPortfolio.paragraph_1,
+      paragraph_2: t.projects.projectDetails.personalPortfolio.paragraph_2,
+      technologies: "Javascript · React · ChakraUi · GSAP",
+      repository: "https://github.com/agusasaad/Portafolio",
+      img: portfolioCapture_1,
     },
   ];
 };

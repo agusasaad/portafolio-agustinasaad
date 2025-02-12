@@ -7,7 +7,7 @@
 
 .slider .move {
   display: flex;
-  width: calc(565px * 10);
+  width: calc(565px * 12);
   animation: animacion 30s linear infinite;
 }
 
@@ -16,7 +16,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-565px * 5));
+    transform: translateX(calc(-565px * 6));
   }
 }
 
@@ -45,34 +45,9 @@
   transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 1200px) {
-  .slider .move {
-    display: flex;
-    width: calc(465px * 10);
-    animation: animacion 30s linear infinite;
-  }
-
-  @keyframes animacion {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-465px * 5));
-    }
-  }
-
-  .slider .card {
-    height: auto;
-    width: 465px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    will-change: transform;
-  }
-
+@media (max-width: 1300px) {
   .card .content_image img {
-    width: 450;
-    height: 500;
+    height: 550px;
   }
 }
 

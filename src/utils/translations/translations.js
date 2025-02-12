@@ -13,7 +13,7 @@ export const translations = {
         "Desarrollador Web de Córdoba, Argentina. Me especializo en desarrollo Front-end, con experiencia en la creación de interfaces de usuario eficientes y visualmente atractivas.",
     },
     aboutMe: {
-      title: "Sobre Mi",
+      title: "Sobre mi",
       paragraph_1: "¡Hola! Soy Agustín, desarrollador Front End.",
       paragraph_2:
         "Me apasiona crear aplicaciones web intuitivas que mejoren la experiencia del usuario. Cada desafío es una oportunidad para aprender y aportar soluciones creativas.",
@@ -44,7 +44,7 @@ export const translations = {
     },
     projects: {
       subtitle: "Mis Proyectos",
-      title: "Seleccione un proyecto",
+      title: "Seleccione un trabajo",
       paragraph_git_hub_1: "¡Gracias por explorar mis trabajos!",
       paragraph_git_hub_2: "Descubre más en mi GitHub.",
       button: "Visita mi GitHub",
@@ -126,7 +126,7 @@ export const translations = {
         "Web Developer from Córdoba, Argentina. I specialize in Front end development, with experience in creating efficient and visually attractive user interfaces.",
     },
     aboutMe: {
-      title: "About Me",
+      title: "About me",
       paragraph_1: "Hi there, I'm Agustin – a Front End developer.",
       paragraph_2:
         "I'm passionate about creating web applications that are easy to use and enhance the user experience. Every challenge is an opportunity to learn and bring creative solutions.",

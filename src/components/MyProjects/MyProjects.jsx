@@ -13,9 +13,17 @@ const MyProjects = () => {
   const container = useRef(null);
   const title = useRef(null);
   const cardsRef = useRef([]);
+  const cardMobileRef = useRef([]);
+  const container_button_git = useRef(null);
 
   useEffect(() => {
-    projectAnimation({ container, title, cardsRef });
+    projectAnimation({
+      container,
+      title,
+      cardsRef,
+      cardMobileRef,
+      container_button_git,
+    });
   }, []);
   return (
     <section className={styles.container} ref={container}>
@@ -27,8 +35,8 @@ const MyProjects = () => {
         <h2>{t.projects.title}</h2>
       </div>
       <CarrucelProject ref={cardsRef} />
-      <CarrucelMobile ref={cardsRef} />
-      <div className={styles.visit_git_content}>
+      <CarrucelMobile ref={cardMobileRef} />
+      <div className={styles.visit_git_content} ref={container_button_git}>
         <p>{t.projects.paragraph_git_hub_1}</p>
         <p>{t.projects.paragraph_git_hub_2}</p>
         <button>

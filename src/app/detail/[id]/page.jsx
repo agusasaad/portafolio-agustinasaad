@@ -20,12 +20,12 @@ const DetailPage = () => {
 
   const handleBack = () => {
     Number(id) === 1
-      ? router.push("/detail/5")
+      ? router.push("/detail/6")
       : router.push(`/detail/${Number(id) - 1}`);
   };
 
   const handleNext = () => {
-    Number(id) === 5
+    Number(id) === 6
       ? router.push("/detail/1")
       : router.push(`/detail/${Number(id) + 1}`);
   };
