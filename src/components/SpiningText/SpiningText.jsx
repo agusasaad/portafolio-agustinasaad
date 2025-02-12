@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import Image from "next/image";
 import styles from "./SpiningText.module.css";
-import image_about_me from "@/assets/images/image_profile.png";
+import image_about_me from "@/assets/images/image_profile.webp";
 import { useTranslation } from "@/Hooks/useTranslations";
 
 const SpiningText = forwardRef(function SpiningText(props, ref) {
