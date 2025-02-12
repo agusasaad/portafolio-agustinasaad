@@ -9,10 +9,17 @@ import Link from "next/link";
 import { useTranslation } from "@/Hooks/useTranslations";
 import Back from "@/assets/icons/Back";
 import Next from "@/assets/icons/Next";
+import { useEffect, useRef } from "react";
+import { detailAnimation } from "@/utils/animationGsap/AnimationGsap";
 
 const DetailPage = () => {
   const { id } = useParams();
   const findProject = getProjects().find((item) => item.id === Number(id));
+  const container_one = useRef(null);
+  const imageRef = useRef(null);
+  const paragraph_two = useRef(null);
+  const paragraph_three = useRef(null);
+  const image_two = useRef(null);
 
   const t = useTranslation();
 
@@ -30,26 +37,39 @@ const DetailPage = () => {
       : router.push(`/detail/${Number(id) + 1}`);
   };
 
+  useEffect(() => {
+    detailAnimation({
+      container_one,
+      imageRef,
+      paragraph_two,
+      paragraph_three,
+      image_two,
+    });
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.cargo_and_date}>
-          <span>{findProject.cargo}</span>
-          <p>{findProject.date}</p>
+        <div className={styles.container_one} ref={container_one}>
+          <div className={styles.cargo_and_date}>
+            <span>{findProject.cargo}</span>
+            <p>{findProject.date}</p>
+          </div>
+          <h2>{findProject.name}</h2>
+          <p>{findProject.paragraph_1}</p>
         </div>
-        <h2>{findProject.name}</h2>
-        <p>{findProject.paragraph_1}</p>
         <Image
           alt={`Image ${findProject.name}`}
           src={findProject.imageModal}
           width={1200}
           height={500}
+          ref={imageRef}
         />
-        <div className={styles.responsibilities}>
+        <div className={styles.responsibilities} ref={paragraph_two}>
           <span>{t.detail_projects.title_1}</span>
           <p>{findProject.paragraph_2}</p>
         </div>
-        <div className={styles.technologies}>
+        <div className={styles.technologies} ref={paragraph_three}>
           <span>{t.detail_projects.title_2}</span>
           <div className={styles.text_and_buttons}>
             <p>{findProject.technologies}</p>
@@ -72,6 +92,7 @@ const DetailPage = () => {
           alt={`Image ${findProject.name}`}
           width={1200}
           height={500}
+          ref={image_two}
         />
         <div className={styles.container_button_page}>
           <button aria-label="button-back" onClick={handleBack}>

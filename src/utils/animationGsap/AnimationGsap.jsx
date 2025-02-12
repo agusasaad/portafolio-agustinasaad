@@ -189,3 +189,35 @@ export const projectAnimation = ({
     );
   }
 };
+//Animaciones detail projects
+export const detailAnimation = ({
+  container_one,
+  imageRef,
+  paragraph_two,
+  paragraph_three,
+  image_two,
+}) => {
+  gsap.fromTo(
+    [
+      container_one.current,
+      imageRef.current,
+      paragraph_two.current,
+      paragraph_three.current,
+      image_two.current,
+    ],
+    {
+      y: 100,
+      opacity: 0,
+      visibility: "hidden",
+    },
+    {
+      opacity: 1,
+      y: 0,
+      visibility: "visible",
+      ease: "power3.out",
+      duration: 1.5,
+      stagger: 0.3,
+      delay: 0.5,
+    }
+  );
+};
