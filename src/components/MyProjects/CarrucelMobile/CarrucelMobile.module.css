@@ -1,10 +1,13 @@
 .slider {
-  overflow: scroll;
+  overflow: auto;
   display: none;
   align-items: center;
   scrollbar-width: none;
 }
 
+.slider::-webkit-scrollbar {
+  scrollbar-width: none;
+}
 .slider img {
   width: 500px;
   height: 550px;
