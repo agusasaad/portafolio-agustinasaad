@@ -38,7 +38,10 @@ const MyServices = () => {
   return (
     <section className={styles.container} ref={container}>
       <div className={styles.content_title} ref={title}>
-        <span>{t.services.subtitle}</span>
+        <span className={styles.subtitle}>
+          <div className={styles.circle}></div>
+          {t.services.subtitle}
+        </span>
         <h2>{t.services.title}</h2>
       </div>
 

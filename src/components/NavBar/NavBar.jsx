@@ -58,15 +58,15 @@ const NavBar = () => {
         </div>
 
         <ul className={styles.list}>
-          <Link href={"/"}>
+          <Link href={"/"} onClick={() => setShowMenu(false)}>
             <li>{t.navbar.home}</li>
             <li>{t.navbar.home}</li>
           </Link>
-          <Link href={"/detail/1"}>
+          <Link href={"/detail/1"} onClick={() => setShowMenu(false)}>
             <li>{t.navbar.projects}</li>
             <li>{t.navbar.projects}</li>
           </Link>
-          <Link href={"/contactme"}>
+          <Link href={"/contactme"} onClick={() => setShowMenu(false)}>
             <li>{t.navbar.contact}</li>
             <li>{t.navbar.contact}</li>
           </Link>

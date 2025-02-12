@@ -98,14 +98,14 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: rgb(71, 172, 83);
+  background-color: #10b981;
 }
 
 .content_p .circle_green:nth-of-type(2) {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: rgb(71, 172, 83);
+  background-color: #10b981;
   filter: blur(1px);
   position: absolute;
   top: 0;

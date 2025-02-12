@@ -19,7 +19,7 @@ export const translations = {
         "Me apasiona crear aplicaciones web intuitivas que mejoren la experiencia del usuario. Cada desafío es una oportunidad para aprender y aportar soluciones creativas.",
       paragraph_3:
         "Siempre busco mejorar mis habilidades y agregar valor a cada proyecto. Me motiva trabajar en equipo, aprender y contribuir al éxito colectivo.",
-      spinnin: "DESARROLLADOR FRONTEND - DESARROLLADOR FRONTEND - ",
+      spinnin: "FRONTEND DEVELOPER - FRONTEND DEVELOPER - ",
     },
     services: {
       subtitle: "Servicios",
@@ -43,7 +43,7 @@ export const translations = {
       },
     },
     projects: {
-      subtitle: "Proyectos",
+      subtitle: "Mis Proyectos",
       title: "Seleccione un proyecto",
       paragraph_git_hub_1: "¡Gracias por explorar mis trabajos!",
       paragraph_git_hub_2: "Descubre más en mi GitHub.",
@@ -156,7 +156,7 @@ export const translations = {
       },
     },
     projects: {
-      subtitle: "Projects",
+      subtitle: "My Projects",
       title: "Select work",
       paragraph_git_hub_1: "Thanks for exploring my works!",
       paragraph_git_hub_2: "Discover more on my GitHub.",

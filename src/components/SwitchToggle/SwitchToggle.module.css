@@ -41,7 +41,7 @@
 
 /* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
 .toggle_switch .toggle_input:checked + .toggle_label {
-  background-color: var(--violet);
+  background-color: #10b981;
 }
 
 .toggle_switch .toggle_input:checked + .toggle_label::before {
@@ -72,4 +72,38 @@
 
 .toggle_switch.dark .toggle_input:checked + .toggle_label::before {
   transform: translateX(12px); /* Ajuste del movimiento */
+}
+
+/* Ajuste del tamaño para pantallas mayores a 628px */
+@media (max-width: 628px) {
+  .toggle_switch {
+    width: 40px; /* Aumentado */
+    height: 22px; /* Aumentado */
+  }
+
+  .toggle_switch .toggle_label {
+    width: 40px; /* Aumentado */
+    height: 22px; /* Aumentado */
+  }
+
+  .toggle_switch .toggle_label::before {
+    width: 18px; /* Aumentado */
+    height: 18px; /* Aumentado */
+    top: 2px;
+    left: 2px;
+  }
+
+  .toggle_switch .toggle_input:checked + .toggle_label::before {
+    transform: translateX(18px); /* Ajuste del movimiento */
+  }
+
+  /* Light tema */
+  .toggle_switch.light .toggle_input:checked + .toggle_label::before {
+    transform: translateX(6px); /* Ajuste del movimiento */
+  }
+
+  /* Dark tema */
+  .toggle_switch.dark .toggle_input:checked + .toggle_label::before {
+    transform: translateX(18px); /* Ajuste del movimiento */
+  }
 }
