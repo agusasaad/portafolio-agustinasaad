@@ -136,6 +136,7 @@ export const projectAnimation = ({
   title,
   cardsRef,
   cardMobileRef,
+  circleRef,
 }) => {
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -188,4 +189,12 @@ export const projectAnimation = ({
       "-=0.5"
     );
   }
+
+  gsap.to(circleRef.current, {
+    scale: 2.5,
+    opacity: 0,
+    ease: "power1",
+    repeat: -1,
+    duration: 1.3,
+  });
 };

@@ -31,12 +31,29 @@
   margin-bottom: 10px;
 }
 
-.circle {
-  width: 8px;
-  height: 8px;
-  background: #10b981;
-  border-radius: 50%;
+.container_circle {
+  position: relative;
+  display: flex;
+  align-items: center;
   margin-right: 7px;
+}
+
+.circle_green {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #10b981;
+}
+
+.circle_green:nth-of-type(2) {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #10b981;
+  filter: blur(1px);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .content_title h2 {

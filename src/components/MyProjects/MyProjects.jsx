@@ -14,6 +14,7 @@ const MyProjects = () => {
   const title = useRef(null);
   const cardsRef = useRef([]);
   const cardMobileRef = useRef([]);
+  const circleRef = useRef(null);
 
   useEffect(() => {
     projectAnimation({
@@ -21,13 +22,17 @@ const MyProjects = () => {
       title,
       cardsRef,
       cardMobileRef,
+      circleRef,
     });
   }, []);
   return (
     <section className={styles.container} ref={container}>
       <div className={styles.content_title} ref={title}>
         <span className={styles.subtitle}>
-          <div className={styles.circle}></div>
+          <div className={styles.container_circle}>
+            <div className={styles.circle_green}></div>
+            <div className={styles.circle_green} ref={circleRef}></div>
+          </div>
           {t.projects.subtitle}
         </span>
         <h2>{t.projects.title}</h2>
