@@ -20,7 +20,7 @@ const CarrucelMobile = forwardRef((props, ref) => {
             <div className={styles.content_image}>
               <Image
                 src={project.imageCard}
-                width={330}
+                width={500}
                 height={500}
                 alt={project.name}
                 priority={true}
