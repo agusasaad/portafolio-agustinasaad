@@ -9,3 +9,9 @@
   transform-origin: center;
   z-index: 100;
 }
+
+@media (max-width: 768px) {
+  .mover {
+    display: none;
+  }
+}
