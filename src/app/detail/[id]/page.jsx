@@ -11,6 +11,7 @@ import Back from "@/assets/icons/Back";
 import Next from "@/assets/icons/Next";
 import { useEffect, useRef } from "react";
 import { detailAnimation } from "@/utils/animationGsap/AnimationGsap";
+import { useLanguageStore } from "@/app/store";
 
 const DetailPage = () => {
   const { id } = useParams();
@@ -21,7 +22,9 @@ const DetailPage = () => {
   const paragraph_three = useRef(null);
   const image_two = useRef(null);
 
+  //Zustand
   const t = useTranslation();
+  const { setScaling } = useLanguageStore();
 
   const router = useRouter();
 
@@ -74,12 +77,22 @@ const DetailPage = () => {
           <div className={styles.text_and_buttons}>
             <p>{findProject.technologies}</p>
             <div className={styles.container_button}>
-              <Link href={findProject.repository} target="_blank">
+              <Link
+                href={findProject.repository}
+                target="_blank"
+                onMouseEnter={() => setScaling(true)}
+                onMouseLeave={() => setScaling(false)}
+              >
                 <GitHub color="white" width="20px" height="20px" />
                 {t.detail_projects.button_1}
               </Link>
               {findProject?.web && (
-                <Link href={findProject.web} target="_blank">
+                <Link
+                  href={findProject.web}
+                  target="_blank"
+                  onMouseEnter={() => setScaling(true)}
+                  onMouseLeave={() => setScaling(false)}
+                >
                   <Url color="white" width="20px" height="20px" />
                   Web
                 </Link>

@@ -8,10 +8,9 @@ import Hamburguer from "@/assets/icons/Hamburguer";
 import Translate from "@/assets/icons/Translate";
 import ArrowDown from "@/assets/icons/ArrowDown";
 import { navBarAnimation } from "@/utils/animationGsap/AnimationGsap";
-import SwitchToggle from "../SwitchToggle/SwitchToggle";
-import { useLanguageStore } from "@/app/store";
 import { useTranslation } from "@/Hooks/useTranslations";
 import ChangeLanguage from "../ChangeLanguage/ChangeLanguage";
+import { useLanguageStore } from "@/app/store";
 
 const NavBar = () => {
   const navBarContainer = useRef(null);
@@ -19,7 +18,9 @@ const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [showMenuLanguague, setShowMenuLanguague] = useState(false);
 
+  //Zustand
   const t = useTranslation();
+  const { setScaling } = useLanguageStore();
 
   useEffect(() => {
     navBarAnimation({ navBarContainer, circleRef });
@@ -50,6 +51,8 @@ const NavBar = () => {
               <Link
                 href={"https://www.linkedin.com/in/agustin-asaad/"}
                 target="_blank"
+                onMouseEnter={() => setScaling(true)}
+                onMouseLeave={() => setScaling(false)}
               >
                 {t.navbar.user}
               </Link>
@@ -58,22 +61,36 @@ const NavBar = () => {
         </div>
 
         <ul className={styles.list}>
-          <Link href={"/"} onClick={() => setShowMenu(false)}>
-            <li>{t.navbar.home}</li>
+          <Link
+            href={"/"}
+            onClick={() => setShowMenu(false)}
+            onMouseEnter={() => setScaling(true)}
+            onMouseLeave={() => setScaling(false)}
+          >
             <li>{t.navbar.home}</li>
           </Link>
-          <Link href={"/detail/1"} onClick={() => setShowMenu(false)}>
-            <li>{t.navbar.projects}</li>
+          <Link
+            href={"/detail/1"}
+            onClick={() => setShowMenu(false)}
+            onMouseEnter={() => setScaling(true)}
+            onMouseLeave={() => setScaling(false)}
+          >
             <li>{t.navbar.projects}</li>
           </Link>
-          <Link href={"/contactme"} onClick={() => setShowMenu(false)}>
-            <li>{t.navbar.contact}</li>
+          <Link
+            href={"/contactme"}
+            onClick={() => setShowMenu(false)}
+            onMouseEnter={() => setScaling(true)}
+            onMouseLeave={() => setScaling(false)}
+          >
             <li>{t.navbar.contact}</li>
           </Link>
           <li className={styles.li_button}>
             <button
               aria-label="translate"
               onClick={() => setShowMenuLanguague(!showMenuLanguague)}
+              onMouseEnter={() => setScaling(true)}
+              onMouseLeave={() => setScaling(false)}
             >
               <Translate />
               <ArrowDown />

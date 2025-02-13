@@ -4,7 +4,7 @@ import styles from "./CursorPoiter.module.css";
 import { useLanguageStore } from "@/app/store";
 
 const CursorPoiter = () => {
-  const { scaling, setScaling } = useLanguageStore();
+  const { scaling } = useLanguageStore();
   const cursorRef = useRef(null);
   const position = useRef({ x: 0, y: 0 });
   const targetPosition = useRef({ x: 0, y: 0 });
@@ -43,7 +43,7 @@ const CursorPoiter = () => {
       className={styles.mover}
       style={{
         transform: `translate(-50%, -50%) scale(${scaling ? 4 : 1})`,
-        mixBlendMode: scaling ? "difference" : "normal", // Aquí cambiamos el color solo si scaling es verdadero
+        mixBlendMode: scaling ? "difference" : "normal",
       }}
     ></div>
   );

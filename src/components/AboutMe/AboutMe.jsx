@@ -16,7 +16,7 @@ const AboutMe = () => {
 
   //Zustand
   const t = useTranslation();
-  const { scaling, setScaling } = useLanguageStore();
+  const { setScaling } = useLanguageStore();
 
   useEffect(() => {
     aboutMeAnimation({ container, imageProfile, title, paragraph, button });
@@ -37,6 +37,7 @@ const AboutMe = () => {
           href={
             "https://drive.google.com/file/d/1V6KU4kVrJnvWpc1AAZqIb6-YH5xdsx7l/view?usp=sharing"
           }
+          target="_blank"
           onMouseEnter={() => setScaling(true)}
           onMouseLeave={() => setScaling(false)}
         >

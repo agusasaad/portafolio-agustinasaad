@@ -98,6 +98,7 @@
   background-color: #111;
   border-radius: 0.375rem;
   font-size: 13px;
+  cursor: none;
 }
 
 .container_button_page {
@@ -120,6 +121,7 @@
   color: var(--title);
   letter-spacing: -0.5px;
   line-height: 25px;
+  cursor: none;
 }
 
 @media (max-width: 1300px) {
