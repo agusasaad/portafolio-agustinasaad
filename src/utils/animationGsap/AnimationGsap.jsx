@@ -8,7 +8,7 @@ export const buttonTranslateAnimate = ({ buttonTranslateRef }) => {
     scale: 0.1,
     ease: "power2",
     duration: 0.5,
-    delay: 1.5,
+    delay: 2,
   });
 };
 //Animaciones navbar
@@ -196,7 +196,7 @@ export const projectAnimation = ({
         ease: "power2",
         stagger: 0.2,
       },
-      "-=0.5"
+      "-=0.8"
     );
   }
 };

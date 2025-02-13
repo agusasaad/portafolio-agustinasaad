@@ -102,6 +102,16 @@ export const translations = {
           technologies:
             "Javascript · React · Redux · Node.js · Express · Postgresql · Sequelize",
         },
+        grupoZurita: {
+          name: "Grupo Zurita",
+          cargo: "Desarrollador Front End",
+          date: "Feb 2025",
+          paragraph_1:
+            "Grupo Zurita es una empresa familiar con más de 40 años de trayectoria en la industria de la construcción, especializada en aberturas de PVC, cerramientos de aluminio y soluciones en vidrio. Esta landing page fue diseñada para reflejar su profesionalismo, destacando sus productos y servicios con un diseño moderno y funcional.",
+          paragraph_2:
+            "Como desarrollador Front End, implementé la interfaz utilizando React.js y Next.js para asegurar un rendimiento óptimo y una navegación fluida. La aplicación de CSS Modules permitió un diseño modular y escalable, mientras que GSAP se utilizó para agregar animaciones sutiles que mejoran la experiencia del usuario.",
+          technologies: "Javascript · React.js · Next.js · CSS Modules · GSAP",
+        },
       },
     },
     detail_projects: {
@@ -157,7 +167,7 @@ export const translations = {
     },
     projects: {
       subtitle: "My Projects",
-      title: "Select work",
+      title: "Select Work",
       paragraph_git_hub_1: "Thanks for exploring my works!",
       paragraph_git_hub_2: "Discover more on my GitHub.",
       button: "Visit GitHub",
@@ -215,6 +225,16 @@ export const translations = {
             "As a Full Stack developer I used React JS along with JavaScript to build an interactive user interface on the frontend. The integration of Redux ensured efficient management of the application state. On the backend, I implemented multiple endpoints using Express and Node.js to access updated data from the drivers' API. This data was stored in a PostgreSQL database, where I utilized Sequelize as an ORM to facilitate interaction and manipulation of the information.",
           technologies:
             "Javascript · React · Redux · Node.js · Express · Postgresql · Sequelize",
+        },
+        grupoZurita: {
+          name: "Grupo Zurita",
+          cargo: "Front End Developer",
+          date: "Feb 2025",
+          paragraph_1:
+            "Grupo Zurita is a family-owned company with over 40 years of experience in the construction industry, specializing in PVC openings, aluminum enclosures, and glass solutions. This landing page was designed to reflect their professionalism, showcasing their products and services with a modern and functional design.",
+          paragraph_2:
+            "As a Front End Developer, I built the interface using React.js and Next.js to ensure optimal performance and smooth navigation. CSS Modules allowed for a modular and scalable design, while GSAP was used to add subtle animations that enhance the user experience.",
+          technologies: "Javascript · React.js · Next.js · CSS Modules · GSAP",
         },
       },
     },

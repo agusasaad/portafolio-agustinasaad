@@ -22,6 +22,7 @@ const CarrucelProject = forwardRef((props, ref) => {
             ref={(el) => (ref.current[index] = el)}
             onMouseEnter={() => setScaling(true)}
             onMouseLeave={() => setScaling(false)}
+            onClick={() => setScaling(false)}
           >
             <div className={styles.content_image}>
               <Image

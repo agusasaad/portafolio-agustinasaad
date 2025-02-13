@@ -1,6 +1,6 @@
 .modal {
-  border: 1px solid #222;
-  background-color: #111;
+  border: 1px solid var(--border);
+  background-color: var(--bg);
   width: 180px;
   position: absolute;
   top: 40px;

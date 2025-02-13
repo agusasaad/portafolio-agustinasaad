@@ -12,17 +12,17 @@ const MyServices = () => {
 
   const services = [
     {
-      icon: <Zap color="rgb(228, 228, 228)" />,
+      icon: <Zap color="var(--subtitle)" />,
       title: t.services.cards.card_1.title,
       description: t.services.cards.card_1.description,
     },
     {
-      icon: <Server color="rgb(228, 228, 228)" />,
+      icon: <Server color="var(--subtitle)" />,
       title: t.services.cards.card_2.title,
       description: t.services.cards.card_2.description,
     },
     {
-      icon: <Paint color="rgb(228, 228, 228)" />,
+      icon: <Paint color="var(--subtitle)" />,
       title: t.services.cards.card_3.title,
       description: t.services.cards.card_3.description,
     },
