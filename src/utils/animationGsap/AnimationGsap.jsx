@@ -1,5 +1,16 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+
+//Animation Button Translate
+export const buttonTranslateAnimate = ({ buttonTranslateRef }) => {
+  gsap.from(buttonTranslateRef.current, {
+    opacity: 0,
+    scale: 0.1,
+    ease: "power2",
+    duration: 0.5,
+    delay: 1.5,
+  });
+};
 //Animaciones navbar
 export const navBarAnimation = ({ navBarContainer, circleRef }) => {
   gsap.fromTo(

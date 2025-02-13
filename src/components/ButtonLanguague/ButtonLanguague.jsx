@@ -3,10 +3,11 @@ import Translate from "@/assets/icons/Translate";
 import styles from "./ButtonLanguague.module.css";
 import Modal from "../Modal/Modal";
 import ChangeLanguage from "../ChangeLanguage/ChangeLanguage";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLanguageStore } from "@/app/store";
 import { useTranslation } from "@/Hooks/useTranslations";
 import SwitchToggle from "../SwitchToggle/SwitchToggle";
+import { buttonTranslateAnimate } from "@/utils/animationGsap/AnimationGsap";
 
 const ButtonLanguague = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,9 +15,18 @@ const ButtonLanguague = () => {
   const t = useTranslation();
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+  const buttonTranslateRef = useRef(null);
+
+  useEffect(() => {
+    buttonTranslateAnimate({ buttonTranslateRef });
+  }, []);
   return (
     <>
-      <div className={styles.container} onClick={openModal}>
+      <div
+        className={styles.container}
+        onClick={openModal}
+        ref={buttonTranslateRef}
+      >
         <button aria-label="button-translate" className={styles.button}>
           <Translate width="15px" height="15px" />
         </button>
