@@ -18,7 +18,6 @@ const ContactMe = () => {
   //Zustand
   const t = useTranslation();
   const { setViewCopy } = useLanguageStore();
-  console.log(showToast);
 
   const email = "agusasaad1099@hotmail.com";
 
@@ -29,6 +28,7 @@ const ContactMe = () => {
   const handleCopyToClipboard = () => {
     navigator.clipboard.writeText(email).then(() => {
       setShowToast(true);
+      setViewCopy(false);
     });
   };
 
@@ -50,8 +50,8 @@ const ContactMe = () => {
             id="email"
             name="email"
             readOnly
-            onMouseEnter={() => setViewCopy(true)}
-            onMouseLeave={() => setViewCopy(false)}
+            onMouseEnter={() => !showToast && setViewCopy(true)}
+            onMouseLeave={() => !showToast && setViewCopy(false)}
             onClick={handleCopyToClipboard}
           />
           <Link href={`mailto:${email}`} target="_blank">
