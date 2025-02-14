@@ -31,6 +31,7 @@ body {
   align-items: center;
   color: white;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 a {

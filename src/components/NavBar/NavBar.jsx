@@ -101,7 +101,7 @@ const NavBar = () => {
             <li>{t.navbar.projects}</li>
           </Link>
           <Link
-            href={"/contactme"}
+            href={"/#contactme"}
             onClick={() => setShowMenu(false)}
             onMouseEnter={() => setScaling(true)}
             onMouseLeave={() => setScaling(false)}

@@ -39,7 +39,7 @@ const MyProjects = () => {
       </div>
       <CarrucelProject ref={cardsRef} />
       <CarrucelMobile ref={cardMobileRef} />
-      <div className={styles.visit_git_content} ref={github}>
+      <div className={styles.visit_git_content} ref={github} id="contactme">
         <p>{t.projects.paragraph_git_hub_1}</p>
         <p>{t.projects.paragraph_git_hub_2}</p>
         <Link
