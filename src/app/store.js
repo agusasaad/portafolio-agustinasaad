@@ -6,12 +6,12 @@ export const useLanguageStore = create(
     (set) => ({
       language: "en",
       scaling: false,
-      viewPorject: false,
+      viewProject: false,
       viewCopy: false,
       toggleLanguage: () =>
         set((state) => ({ language: state.language === "en" ? "es" : "en" })),
       setScaling: (value) => set({ scaling: value }),
-      setViewProject: (value) => set({ viewPorject: value }),
+      setViewProject: (value) => set({ viewProject: value }),
       setViewCopy: (value) => set({ viewCopy: value }),
     }),
     {

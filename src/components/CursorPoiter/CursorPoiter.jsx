@@ -6,7 +6,7 @@ import { useTranslation } from "@/Hooks/useTranslations";
 import Copy from "@/assets/icons/Copy";
 
 const CursorPoiter = () => {
-  const { scaling, viewPorject, viewCopy } = useLanguageStore();
+  const { scaling, viewProject, viewCopy } = useLanguageStore();
   const t = useTranslation();
 
   const cursorRef = useRef(null);
@@ -44,21 +44,21 @@ const CursorPoiter = () => {
   return (
     <div
       ref={cursorRef}
-      className={`${styles.mover} ${viewPorject ? styles.cardHover : ""} ${
+      className={`${styles.mover} ${viewProject ? styles.cardHover : ""} ${
         viewCopy ? styles.copyHover : ""
       }`}
       style={{
         transform: `translate(-50%, -50%) scale(${
-          viewPorject ? 1.09 : viewCopy ? 0.8 : scaling ? 4.5 : 1
+          viewProject ? 1.09 : viewCopy ? 0.8 : scaling ? 4.5 : 1
         })`,
-        mixBlendMode: viewPorject
+        mixBlendMode: viewProject
           ? "normal"
           : scaling
           ? "difference"
           : "normal",
       }}
     >
-      {viewPorject && (
+      {viewProject && (
         <p className={styles.cursorText}>{t.cursorPoiter.text}</p>
       )}
       {viewCopy && (
