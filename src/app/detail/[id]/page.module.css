@@ -121,7 +121,7 @@
   color: var(--title);
   letter-spacing: -0.5px;
   line-height: 25px;
-  cursor: none;
+  cursor: pointer;
 }
 
 @media (max-width: 1300px) {

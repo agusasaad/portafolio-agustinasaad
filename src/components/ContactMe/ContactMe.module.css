@@ -101,10 +101,10 @@
 .input_email input:focus {
   outline: none;
   box-shadow: none;
-  border-color: initial;
+  border-color: var(--border);
 }
 
-.input_email button {
+.input_email a {
   display: flex;
   align-items: center;
   border: 1px solid var(--border);

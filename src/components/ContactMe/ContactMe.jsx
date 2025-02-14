@@ -36,9 +36,9 @@ const ContactMe = () => {
             id="email"
             name="email"
           />
-          <button aria-label="copy-paste">
+          <Link href={"mailto:agusasaad1099@hotmail.com"} target="_blank">
             <Copy />
-          </button>
+          </Link>
         </div>
       </div>
     </div>
