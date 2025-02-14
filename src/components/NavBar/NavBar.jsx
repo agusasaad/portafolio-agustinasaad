@@ -15,6 +15,7 @@ import { useLanguageStore } from "@/app/store";
 const NavBar = () => {
   const navBarContainer = useRef(null);
   const circleRef = useRef(null);
+  const languageMenuRef = useRef(null);
   const [showMenu, setShowMenu] = useState(false);
   const [showMenuLanguague, setShowMenuLanguague] = useState(false);
 
@@ -25,6 +26,25 @@ const NavBar = () => {
   useEffect(() => {
     navBarAnimation({ navBarContainer, circleRef });
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        languageMenuRef.current &&
+        !languageMenuRef.current.contains(event.target)
+      ) {
+        setShowMenuLanguague(false);
+      }
+    };
+
+    if (showMenuLanguague) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [showMenuLanguague]);
 
   return (
     <header
@@ -96,6 +116,7 @@ const NavBar = () => {
               <ArrowDown />
             </button>
             <ChangeLanguage
+              ref={languageMenuRef}
               showMenuLanguague={showMenuLanguague}
               setShowMenuLanguague={setShowMenuLanguague}
             />

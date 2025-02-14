@@ -1,18 +1,19 @@
 "use client";
 import { useLanguageStore } from "@/app/store";
-import { useState } from "react";
+import { useState, forwardRef } from "react";
 import SwitchToggle from "../SwitchToggle/SwitchToggle";
 import styles from "./ChangeLanguage.module.css";
 import { useTranslation } from "@/Hooks/useTranslations";
 
-const ChangeLanguage = ({ showMenuLanguague }) => {
-  //Zustand
+const ChangeLanguage = forwardRef(({ showMenuLanguague }, ref) => {
+  // Zustand
   const { toggleLanguage } = useLanguageStore();
   const { language } = useLanguageStore();
   const t = useTranslation();
 
   return (
     <div
+      ref={ref}
       className={`${styles.modal} ${
         showMenuLanguague ? styles.showMenuLanguague : ""
       }`}
@@ -35,10 +36,7 @@ const ChangeLanguage = ({ showMenuLanguague }) => {
         />
       </div>
 
-      <div
-        className={styles.toggle_container}
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className={styles.toggle_container}>
         <p
           style={{
             color: language === "es" ? "white" : "var(--paragraph)",
@@ -55,6 +53,6 @@ const ChangeLanguage = ({ showMenuLanguague }) => {
       </div>
     </div>
   );
-};
+});
 
 export default ChangeLanguage;
