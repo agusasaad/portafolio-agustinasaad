@@ -120,7 +120,6 @@
 @media (max-width: 768px) {
   .container {
     padding: 100px 0px;
-    gap: 10px;
   }
   .content_card_services {
     flex-direction: column;
@@ -133,7 +132,10 @@
   }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 425px) {
+  .container {
+    gap: 10px;
+  }
   .content_title h2 {
     display: none;
   }
