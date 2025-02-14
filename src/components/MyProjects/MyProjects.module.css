@@ -4,6 +4,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 30px;
+  padding-bottom: 150px;
 }
 
 .container .content_title {
@@ -87,6 +88,7 @@
 @media (max-width: 425px) {
   .container {
     gap: 10px;
+    padding-bottom: 100px;
   }
   .subtitle {
     font-weight: 500;

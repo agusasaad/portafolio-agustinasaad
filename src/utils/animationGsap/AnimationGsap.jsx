@@ -111,6 +111,7 @@ export const projectAnimation = ({
   title,
   cardsRef,
   cardMobileRef,
+  github,
 }) => {
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -163,6 +164,24 @@ export const projectAnimation = ({
       "-=0.8"
     );
   }
+
+  gsap.fromTo(
+    github.current,
+    { y: 100, opacity: 0, visibility: "hidden" },
+    {
+      y: 0,
+      opacity: 1,
+      visibility: "visible",
+      duration: 0.8,
+      ease: "power2",
+      scrollTrigger: {
+        trigger: container.current,
+        start: "center 50%",
+        end: "bottom top",
+        // markers: true,
+      },
+    }
+  );
 };
 //Animaciones MyServices
 export const servicesAnimation = ({ container, title, cardsRef }) => {
