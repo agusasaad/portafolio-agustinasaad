@@ -69,7 +69,7 @@ const Footer = () => {
         <div className={styles.content_list}>
           <ul className={styles.navigate} ref={list_one}>
             <Link
-              href={"/home"}
+              href={"/"}
               onMouseEnter={() => setScaling(true)}
               onMouseLeave={() => setScaling(false)}
             >

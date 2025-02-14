@@ -115,9 +115,9 @@
   color: white;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--title);
   letter-spacing: -0.5px;
   line-height: 25px;
@@ -139,7 +139,7 @@
 @media (max-width: 425px) {
   .container {
     padding-top: 0px;
-    padding: 120px 15px 20px 15px;
+    padding: 120px 15px 50px 15px;
   }
 
   .content {
@@ -163,7 +163,7 @@
     align-items: center;
     gap: 5px;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--title);
     letter-spacing: 0px;
     line-height: 0px;

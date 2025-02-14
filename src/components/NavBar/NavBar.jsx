@@ -31,7 +31,8 @@ const NavBar = () => {
     const handleClickOutside = (event) => {
       if (
         languageMenuRef.current &&
-        !languageMenuRef.current.contains(event.target)
+        !languageMenuRef.current.contains(event.target) &&
+        !event.target.closest('button[aria-label="translate"]')
       ) {
         setShowMenuLanguague(false);
       }
@@ -39,6 +40,8 @@ const NavBar = () => {
 
     if (showMenuLanguague) {
       document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
@@ -108,7 +111,10 @@ const NavBar = () => {
           <li className={styles.li_button}>
             <button
               aria-label="translate"
-              onClick={() => setShowMenuLanguague(!showMenuLanguague)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowMenuLanguague((prev) => !prev);
+              }}
               onMouseEnter={() => setScaling(true)}
               onMouseLeave={() => setScaling(false)}
             >
