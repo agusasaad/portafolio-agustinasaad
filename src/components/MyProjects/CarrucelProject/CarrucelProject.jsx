@@ -9,7 +9,7 @@ const CarrucelProject = forwardRef((props, ref) => {
   const projects = getProjects();
   const copyProject = [...projects, ...projects];
 
-  const { scaling, setScaling } = useLanguageStore();
+  const { setViewProject } = useLanguageStore();
 
   return (
     <div className={styles.slider}>
@@ -20,9 +20,9 @@ const CarrucelProject = forwardRef((props, ref) => {
             key={index}
             className={styles.card}
             ref={(el) => (ref.current[index] = el)}
-            onMouseEnter={() => setScaling(true)}
-            onMouseLeave={() => setScaling(false)}
-            onClick={() => setScaling(false)}
+            onMouseEnter={() => setViewProject(true)}
+            onMouseLeave={() => setViewProject(false)}
+            onClick={() => setViewProject(false)}
           >
             <div className={styles.content_image}>
               <Image

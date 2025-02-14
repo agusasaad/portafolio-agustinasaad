@@ -81,7 +81,6 @@
   color: var(--paragraph);
   font-size: 14px;
   font-weight: 300;
-  cursor: none;
 }
 
 .text_info .content_p a:hover {
@@ -125,7 +124,6 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  cursor: none;
 }
 
 .list .li_button {
@@ -137,7 +135,6 @@
 .list .li_button button {
   display: flex;
   align-items: center;
-  cursor: none;
 }
 
 .nav_bar .hamburguer_menu {

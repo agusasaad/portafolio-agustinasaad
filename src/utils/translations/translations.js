@@ -23,7 +23,7 @@ export const translations = {
     },
     services: {
       subtitle: "Servicios",
-      title: "Puedo ayudarte con",
+      title: "¿Cómo puedo ayudarte?",
       cards: {
         card_1: {
           title: "Optimización y Rendimiento",
@@ -43,7 +43,7 @@ export const translations = {
       },
     },
     projects: {
-      subtitle: "Mis Proyectos",
+      subtitle: "Proyectos",
       title: "Seleccione un trabajo",
       paragraph_git_hub_1: "¡Gracias por explorar mis trabajos!",
       paragraph_git_hub_2: "Descubre más en mi GitHub.",
@@ -114,12 +114,26 @@ export const translations = {
         },
       },
     },
+    contactMe: {
+      subtitle: "Contactame",
+      title: "Empecemos a crear juntos",
+      paragraph: "Demos vida a tus ideas con soluciones innovadoras.",
+    },
     detail_projects: {
       title_1: "Responsabilidades",
       title_2: "Tecnologías",
       button_1: "Repositorio",
       next: "Siguiente",
       back: "Atras",
+    },
+    cursorPoiter: {
+      text: "VER AHORA",
+    },
+    footer: {
+      paragraph: "Creando experiencias interactivas y optimizadas.",
+      copyrigth_1: "Todos los derechos reservados.",
+      copyrigth_2: "Portafolio creado por ",
+      copyrigth_3: "Construido en ",
     },
   },
   en: {
@@ -146,7 +160,7 @@ export const translations = {
     },
     services: {
       subtitle: "Services",
-      title: "I can help you with",
+      title: "How can I help you?",
       cards: {
         card_1: {
           title: "Optimization & Performance",
@@ -166,8 +180,8 @@ export const translations = {
       },
     },
     projects: {
-      subtitle: "My Projects",
-      title: "Select Work",
+      subtitle: "Projects",
+      title: "Select work",
       paragraph_git_hub_1: "Thanks for exploring my works!",
       paragraph_git_hub_2: "Discover more on my GitHub.",
       button: "Visit GitHub",
@@ -238,13 +252,26 @@ export const translations = {
         },
       },
     },
-
+    contactMe: {
+      subtitle: "Contact Me",
+      title: "Let's start creating together",
+      paragraph: "Let's bring your ideas to life with innovative solutions.",
+    },
     detail_projects: {
       title_1: "Responsibilities",
       title_2: "Technologies",
       button_1: "Repository",
       next: "Next",
       back: "Back",
+    },
+    cursorPoiter: {
+      text: "VIEW NOW",
+    },
+    footer: {
+      paragraph: "Creating interactive and optimized experiences.",
+      copyrigth_1: "All rights reserved.",
+      copyrigth_2: "Portfolio created by ",
+      copyrigth_3: "Built with ",
     },
   },
 };

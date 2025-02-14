@@ -27,7 +27,6 @@
   flex-direction: column;
   align-items: center;
   will-change: transform;
-  cursor: none;
 }
 
 .slider .card:hover .content_image img {

@@ -105,42 +105,6 @@ export const aboutMeAnimation = ({
     },
   });
 };
-//Animaciones MyServices
-export const servicesAnimation = ({ container, title, cardsRef }) => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: container.current,
-      start: "top 60%",
-      end: "bottom top",
-    },
-  });
-
-  tl.fromTo(
-    title.current,
-    { y: 100, opacity: 0, visibility: "hidden" },
-    {
-      y: 0,
-      opacity: 1,
-      visibility: "visible",
-      duration: 0.8,
-      ease: "power2",
-    }
-  ).fromTo(
-    cardsRef.current,
-    { y: 100, opacity: 0, visibility: "hidden" },
-    {
-      y: 0,
-      opacity: 1,
-      visibility: "visible",
-      duration: 0.8,
-      ease: "power2",
-      stagger: 0.2,
-    },
-    "-=0.5"
-  );
-};
 //Animaciones MyProjects
 export const projectAnimation = ({
   container,
@@ -199,6 +163,71 @@ export const projectAnimation = ({
       "-=0.8"
     );
   }
+};
+//Animaciones MyServices
+export const servicesAnimation = ({ container, title, cardsRef }) => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: container.current,
+      start: "top 80%",
+      end: "bottom bottom",
+    },
+  });
+
+  tl.fromTo(
+    title.current,
+    { y: 100, opacity: 0, visibility: "hidden" },
+    {
+      y: 0,
+      opacity: 1,
+      visibility: "visible",
+      duration: 1.5,
+      ease: "power3.out",
+    }
+  ).fromTo(
+    cardsRef.current,
+    { y: 100, opacity: 0, visibility: "hidden" },
+    {
+      y: 0,
+      opacity: 1,
+      visibility: "visible",
+      duration: 1,
+      ease: "power3.out",
+      stagger: 0.2,
+    },
+    "-=1"
+  );
+};
+//Animaciones ContactMe
+export const contactMeAnimation = ({
+  container,
+  subtitleRef,
+  title_paragraph,
+  inputRef,
+}) => {
+  gsap.fromTo(
+    [subtitleRef.current, title_paragraph.current, inputRef.current],
+    {
+      y: 100,
+      opacity: 0,
+      visibility: "hidden",
+    },
+    {
+      opacity: 1,
+      y: 0,
+      visibility: "visible",
+      ease: "power3.out",
+      duration: 1,
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: container.current,
+        start: "top 80%",
+        end: "bottom bottom",
+      },
+    }
+  );
 };
 //Animaciones detail projects
 export const detailAnimation = ({
