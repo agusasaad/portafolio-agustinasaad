@@ -11,13 +11,11 @@ import Nodejs from "@/assets/icons/Nodejs";
 import Postgresql from "@/assets/icons/Postgresql";
 import React from "@/assets/icons/React";
 import Supabase from "@/assets/icons/Supabase";
-import Typescript from "@/assets/icons/Typescript";
 
 export const icons = [
   <Html />,
   <Css />,
   <Javascript height="35px" width="35px" />,
-  <Typescript />,
   <React />,
   <Nextjs />,
   <Chakraui />,

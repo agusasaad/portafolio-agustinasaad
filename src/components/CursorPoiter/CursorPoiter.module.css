@@ -10,9 +10,24 @@
   transition: all 0.2s ease-out;
   transform-origin: center;
   z-index: 100;
+  cursor: none;
 }
 
 .cardHover {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(20, 20, 20, 0.577);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgb(78, 78, 78);
+  transition: all 0.3s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.copyHover {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -32,6 +47,14 @@
   text-wrap: nowrap;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
+}
+
+.copyHover span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardHover .cursorText {

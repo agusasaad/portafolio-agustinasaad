@@ -3,9 +3,10 @@ import { useEffect, useRef } from "react";
 import styles from "./CursorPoiter.module.css";
 import { useLanguageStore } from "@/app/store";
 import { useTranslation } from "@/Hooks/useTranslations";
+import Copy from "@/assets/icons/Copy";
 
 const CursorPoiter = () => {
-  const { scaling, viewPorject } = useLanguageStore();
+  const { scaling, viewPorject, viewCopy } = useLanguageStore();
   const t = useTranslation();
 
   const cursorRef = useRef(null);
@@ -43,10 +44,12 @@ const CursorPoiter = () => {
   return (
     <div
       ref={cursorRef}
-      className={`${styles.mover} ${viewPorject ? styles.cardHover : ""}`}
+      className={`${styles.mover} ${viewPorject ? styles.cardHover : ""} ${
+        viewCopy ? styles.copyHover : ""
+      }`}
       style={{
         transform: `translate(-50%, -50%) scale(${
-          viewPorject ? 1.09 : scaling ? 4.5 : 1
+          viewPorject ? 1.09 : viewCopy ? 0.8 : scaling ? 4.5 : 1
         })`,
         mixBlendMode: viewPorject
           ? "normal"
@@ -57,6 +60,11 @@ const CursorPoiter = () => {
     >
       {viewPorject && (
         <p className={styles.cursorText}>{t.cursorPoiter.text}</p>
+      )}
+      {viewCopy && (
+        <span>
+          <Copy width="18px" height="18px" color="white" />
+        </span>
       )}
     </div>
   );

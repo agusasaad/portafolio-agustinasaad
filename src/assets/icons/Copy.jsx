@@ -1,21 +1,22 @@
 const Copy = ({
-  width = "18px",
-  height = "18px",
-  color = "var(--paragraph)",
+  width = "24",
+  height = "24",
+  color = "white",
   className = "",
 }) => (
   <svg
-    stroke={color}
-    fill={color}
-    strokeWidth="0"
-    role="img"
+    stroke="currentColor"
+    fill="none"
+    strokeWidth={2}
     viewBox="0 0 24 24"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     height={height}
     width={width}
     xmlns="http://www.w3.org/2000/svg"
-    className={className}
   >
-    <path d="M17.187 19.181L24 4.755 0 12.386l9.196 1.963.043 4.896 2.759-2.617-2.147-2.076 7.336 4.63z"></path>
+    <rect width={14} height={14} x={8} y={8} rx={2} ry={2} />
+    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
   </svg>
 );
 

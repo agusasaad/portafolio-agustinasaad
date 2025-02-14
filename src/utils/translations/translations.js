@@ -54,10 +54,11 @@ export const translations = {
           cargo: "Desarrollador Front End",
           date: "Nov 2024",
           paragraph_1:
-            "En este portafolio, encontrarás una selección cuidadosamente curada de mis trabajos más representativos. Cada proyecto ha sido una oportunidad para aplicar mis conocimientos y habilidades de manera creativa y efectiva. Cada proyecto cuenta una historia única sobre mi enfoque, habilidades para resolver problemas y atención al detalle.",
+            "En este portafolio, encontrarás una selección de mis trabajos más representativos. Cada proyecto ha sido una oportunidad para aplicar mis conocimientos y habilidades de manera creativa y efectiva. Cada uno cuenta una historia única sobre mi enfoque, capacidad para resolver problemas y atención al detalle.",
           paragraph_2:
-            "A lo largo del desarrollo de mi portafolio, lideré el diseño y la implementación de la funcionalidad utilizando React y JavaScript, incorporando bibliotecas como Chakra UI y GSAP para una interfaz de usuario atractiva y animaciones dinámicas. Me enfoqué en el diseño responsivo, la optimización del rendimiento y la presentación efectiva del contenido para mostrar mis habilidades y proyectos de manera clara y concisa.",
-          technologies: "Javascript · React · ChakraUi · GSAP",
+            "Durante el desarrollo de mi portafolio, diseñé e implementé la funcionalidad utilizando Next.js y React.js, estilizando los componentes con CSS Modules y gestionando el cambio de idioma de forma global con Zustand. Además, incorporé GSAP para crear animaciones fluidas e interactivas. Me enfoqué en la adaptabilidad, el rendimiento y una presentación visual efectiva para destacar mis habilidades y proyectos de manera clara y profesional.",
+          technologies:
+            "JavaScript · React.js · Next.js · CSS Modules · Zustand · GSAP",
         },
         symbioNet: {
           name: "SymbioNet",
@@ -129,6 +130,9 @@ export const translations = {
     cursorPoiter: {
       text: "VER",
     },
+    toast: {
+      text: "Copiado al portapapeles",
+    },
     footer: {
       paragraph: "Creando experiencias interactivas y optimizadas.",
       copyrigth_1: "Todos los derechos reservados.",
@@ -191,10 +195,11 @@ export const translations = {
           cargo: "Front End Developer",
           date: "Jun 2024",
           paragraph_1:
-            "Within this portfolio, you'll find a carefully curated selection of my most representative works. Each project has been an opportunity to apply my knowledge and skills creatively and effectively. Each project tells a unique story about my approach, problem-solving abilities, and attention to detail.",
+            "In this portfolio, you will find a selection of my most representative work. Each project has been an opportunity to apply my knowledge and skills in a creative and effective way. Each one tells a unique story about my approach, problem-solving ability, and attention to detail.",
           paragraph_2:
-            "Throughout the development of my portfolio, I spearheaded the design and functionality implementation using React and JavaScript, incorporating libraries like Chakra UI and GSAP for an engaging user interface and dynamic animations. I focused on responsive layout, performance optimization, and effective content presentation to showcase my skills and projects clearly and concisely.",
-          technologies: "Javascript · React · ChakraUi · GSAP",
+            "During the development of my portfolio, I designed and implemented the functionality using Next.js and React.js, styling the components with CSS Modules and managing global language changes with Zustand. Additionally, I incorporated GSAP to create smooth and interactive animations. I focused on adaptability, performance, and a visually effective presentation to showcase my skills and projects clearly and professionally.",
+          technologies:
+            "JavaScript · React.js · Next.js · CSS Modules · Zustand · GSAP",
         },
         symbioNet: {
           name: "SymbioNet",
@@ -266,6 +271,9 @@ export const translations = {
     },
     cursorPoiter: {
       text: "VIEW",
+    },
+    toast: {
+      text: "Copied to clipboard",
     },
     footer: {
       paragraph: "Creating interactive and optimized experiences.",

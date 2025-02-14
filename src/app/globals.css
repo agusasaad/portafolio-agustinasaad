@@ -32,6 +32,7 @@ body {
   color: white;
   position: relative;
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 a {

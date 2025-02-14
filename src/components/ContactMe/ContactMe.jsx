@@ -1,10 +1,12 @@
 "use client";
 import Link from "next/link";
 import styles from "./ContactMe.module.css";
-import Copy from "@/assets/icons/Copy";
-import { useEffect, useRef } from "react";
+import SendEmail from "@/assets/icons/SendEmail";
+import { useEffect, useRef, useState } from "react";
 import { contactMeAnimation } from "@/utils/animationGsap/AnimationGsap";
 import { useTranslation } from "@/Hooks/useTranslations";
+import ToastMessage from "../ToastMessage/ToastMessage";
+import { useLanguageStore } from "@/app/store";
 
 const ContactMe = () => {
   const container = useRef(null);
@@ -12,12 +14,24 @@ const ContactMe = () => {
   const title_paragraph = useRef(null);
   const inputRef = useRef(null);
 
+  const [showToast, setShowToast] = useState(false);
   //Zustand
   const t = useTranslation();
+  const { setViewCopy } = useLanguageStore();
+  console.log(showToast);
+
+  const email = "agusasaad1099@hotmail.com";
 
   useEffect(() => {
     contactMeAnimation({ container, subtitleRef, title_paragraph, inputRef });
   }, []);
+
+  const handleCopyToClipboard = () => {
+    navigator.clipboard.writeText(email).then(() => {
+      setShowToast(true);
+    });
+  };
+
   return (
     <div className={styles.container_banner_contact} ref={container}>
       <div className={styles.content}>
@@ -32,16 +46,22 @@ const ContactMe = () => {
         <div className={styles.input_email} ref={inputRef}>
           <input
             type="text"
-            defaultValue={"agusasaad1099@hotmail.com"}
+            value={email}
             id="email"
             name="email"
+            readOnly
+            onMouseEnter={() => setViewCopy(true)}
+            onMouseLeave={() => setViewCopy(false)}
+            onClick={handleCopyToClipboard}
           />
-          <Link href={"mailto:agusasaad1099@hotmail.com"} target="_blank">
-            <Copy />
+          <Link href={`mailto:${email}`} target="_blank">
+            <SendEmail />
           </Link>
         </div>
       </div>
+      {showToast && <ToastMessage onClose={() => setShowToast(false)} />}
     </div>
   );
 };
+
 export default ContactMe;

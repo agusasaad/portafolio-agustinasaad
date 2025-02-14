@@ -105,7 +105,8 @@ export const getProjects = () => {
       imageModal: portfolioModal,
       paragraph_1: t.projects.projectDetails.personalPortfolio.paragraph_1,
       paragraph_2: t.projects.projectDetails.personalPortfolio.paragraph_2,
-      technologies: "Javascript · React · ChakraUi · GSAP",
+      technologies:
+        "JavaScript · React.js · Next.js · CSS Modules · Zustand · GSAP",
       repository: "https://github.com/agusasaad/Portafolio",
       img: portfolioCapture_1,
     },
