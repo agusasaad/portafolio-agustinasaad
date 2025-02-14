@@ -73,7 +73,7 @@
   max-width: 500px;
 }
 
-.input_email {
+.button_email {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -82,7 +82,7 @@
   width: 100%;
   max-width: 500px;
 }
-.input_email input {
+.button_email button {
   background: rgba(12, 12, 15, 0.388);
   backdrop-filter: blur(2px);
   border: 1px solid var(--border);
@@ -99,13 +99,12 @@
   cursor: none;
 }
 
-.input_email input:focus {
-  outline: none;
-  box-shadow: none;
-  border-color: var(--border);
+.button_email button:hover {
+  color: white;
+  transition: all 0.5s ease-in-out;
 }
 
-.input_email a {
+.button_email a {
   display: flex;
   align-items: center;
   border: 1px solid var(--border);
@@ -114,7 +113,17 @@
   padding: 0px 15px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  cursor: pointer;
+  cursor: none;
+  transition: all 0.3s ease;
+}
+
+.icon {
+  transition: all 0.5s ease-in-out;
+}
+
+.button_email a:hover .icon {
+  fill: white;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 1000px) {
@@ -143,7 +152,7 @@
 }
 
 @media (max-width: 535px) {
-  .input_email input {
+  .button_email button {
     font-size: 13px;
   }
 }

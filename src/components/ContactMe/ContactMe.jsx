@@ -43,17 +43,14 @@ const ContactMe = () => {
           <h2>{t.contactMe.title}</h2>
           <p>{t.contactMe.paragraph}</p>
         </div>
-        <div className={styles.input_email} ref={inputRef}>
-          <input
-            type="text"
-            value={email}
-            id="email"
-            name="email"
-            readOnly
+        <div className={styles.button_email} ref={inputRef}>
+          <button
             onMouseEnter={() => !showToast && setViewCopy(true)}
             onMouseLeave={() => !showToast && setViewCopy(false)}
             onClick={handleCopyToClipboard}
-          />
+          >
+            {email}
+          </button>
           <Link href={`mailto:${email}`} target="_blank">
             <SendEmail />
           </Link>
