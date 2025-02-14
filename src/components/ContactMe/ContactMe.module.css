@@ -5,11 +5,12 @@
   background-image: url("./../../assets/images/invertBackground.jpg");
   background-size: cover;
   background-position-x: center;
-  background-position-y: 80%;
+  background-position-y: 50%;
   background-repeat: no-repeat;
   position: relative;
-  padding: 50px 0px 250px 0px;
+  padding: 150px 0px 250px 0px;
   overflow-y: hidden;
+  /* border: 1px solid red; */
 }
 
 .content {
@@ -110,4 +111,10 @@
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .content h2 {
+    font-size: 40px;
+  }
 }

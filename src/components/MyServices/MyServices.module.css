@@ -6,7 +6,7 @@
   align-items: center;
   gap: 30px;
   overflow-y: hidden;
-  padding: 130px 0px 130px 0px;
+  padding: 130px 0px;
 }
 
 .container .content_title {
@@ -59,6 +59,7 @@
   justify-content: center;
   align-items: stretch;
   gap: 15px;
+  padding: 0px 15px;
 }
 
 .content_card_services .card_service {
@@ -101,4 +102,39 @@
   line-height: 28px;
   font-size: 14px;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .content_card_services {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .content_card_services .card_service {
+    width: 80%;
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 100px 0px;
+    gap: 10px;
+  }
+  .content_card_services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content_card_services .card_service {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 435px) {
+  .content_title h2 {
+    display: none;
+  }
 }
