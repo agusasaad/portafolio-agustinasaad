@@ -261,3 +261,75 @@ export const detailAnimation = ({
     }
   );
 };
+export const footerAnimation = ({
+  container,
+  user,
+  paragraph,
+  list_one,
+  list_two,
+  line,
+  copyrigth_one,
+  copyrigth_two,
+  copyrigth_three,
+}) => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: container.current,
+      start: "top 90%",
+      end: "bottom bottom",
+      // markers: true,
+    },
+  });
+
+  tl.fromTo(
+    [user.current, paragraph.current, list_one.current, list_two.current],
+    {
+      y: 50,
+      opacity: 0,
+      visibility: "hidden",
+    },
+    {
+      opacity: 1,
+      y: 0,
+      visibility: "visible",
+      ease: "power3.out",
+      duration: 1,
+      stagger: 0.2,
+    }
+  );
+
+  tl.fromTo(
+    line.current,
+    {
+      width: "0%",
+      opacity: 0,
+      visibility: "hidden",
+    },
+    {
+      width: "100%",
+      visibility: "visible",
+      opacity: 1,
+      ease: "none",
+      duration: 1,
+    },
+    "<"
+  );
+
+  tl.fromTo(
+    [copyrigth_one.current, copyrigth_two.current, copyrigth_three.current],
+    {
+      x: 100,
+      opacity: 0,
+      visibility: "hidden",
+    },
+    {
+      opacity: 1,
+      x: 0,
+      visibility: "visible",
+      ease: "power3.out",
+      duration: 1.2,
+      stagger: 0.2,
+    },
+    "<"
+  );
+};
