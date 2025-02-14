@@ -6,7 +6,7 @@
   align-items: center;
   gap: 30px;
   overflow-y: hidden;
-  padding-bottom: 100px;
+  padding: 130px 0px 130px 0px;
 }
 
 .container .content_title {

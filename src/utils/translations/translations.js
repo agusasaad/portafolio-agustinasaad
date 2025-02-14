@@ -127,7 +127,7 @@ export const translations = {
       back: "Atras",
     },
     cursorPoiter: {
-      text: "VER AHORA",
+      text: "VER",
     },
     footer: {
       paragraph: "Creando experiencias interactivas y optimizadas.",
@@ -265,7 +265,7 @@ export const translations = {
       back: "Back",
     },
     cursorPoiter: {
-      text: "VIEW NOW",
+      text: "VIEW",
     },
     footer: {
       paragraph: "Creating interactive and optimized experiences.",
