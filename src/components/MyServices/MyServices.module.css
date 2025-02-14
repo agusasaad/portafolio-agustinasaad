@@ -137,4 +137,8 @@
   .content_title h2 {
     display: none;
   }
+
+  .content_card_services .card_service {
+    padding: 2rem 1.5rem;
+  }
 }
