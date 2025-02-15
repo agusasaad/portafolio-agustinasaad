@@ -195,9 +195,10 @@
     padding: 0px 20px;
   }
 
-  .list a li {
-    transition: transform 0.3s ease;
-    font-size: 18px;
+  .list li {
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: -1px;
   }
 
   .list .li_button {

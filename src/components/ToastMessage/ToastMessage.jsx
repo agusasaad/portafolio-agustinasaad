@@ -3,12 +3,10 @@ import { useEffect, useRef } from "react";
 import styles from "./ToastMessage.module.css";
 import { createPortal } from "react-dom";
 import gsap from "gsap";
-import { useTranslation } from "@/Hooks/useTranslations";
 import Check from "@/assets/icons/Check";
 
-const ToastMessage = ({ onClose }) => {
+const ToastMessage = ({ onClose, message }) => {
   const toastRef = useRef(null);
-  const t = useTranslation();
 
   useEffect(() => {
     gsap.fromTo(
@@ -38,7 +36,7 @@ const ToastMessage = ({ onClose }) => {
   return createPortal(
     <div className={styles.toast} ref={toastRef}>
       <Check width="20px" height="20px" color="#10b981" />
-      {t.toast.text}
+      {message}
     </div>,
     document.body
   );

@@ -35,7 +35,7 @@ const AboutMe = () => {
         <Link
           className={styles.button_cv}
           href={
-            "https://drive.google.com/file/d/1V6KU4kVrJnvWpc1AAZqIb6-YH5xdsx7l/view?usp=sharing"
+            "https://drive.google.com/file/d/1ogxquM9jtpv8AeEmalf2VVoGAHCl34O0/view?usp=sharing"
           }
           target="_blank"
           onMouseEnter={() => setScaling(true)}

@@ -56,7 +56,12 @@ const ContactMe = () => {
           </Link>
         </div>
       </div>
-      {showToast && <ToastMessage onClose={() => setShowToast(false)} />}
+      {showToast && (
+        <ToastMessage
+          message={t.toast.text}
+          onClose={() => setShowToast(false)}
+        />
+      )}
     </div>
   );
 };
