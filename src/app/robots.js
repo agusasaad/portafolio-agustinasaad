@@ -4,7 +4,7 @@ export default function robots() {
       {
         userAgent: "",
         allow: ["/"],
-        disallow: ["/datail"],
+        disallow: ["/detail"],
       },
     ],
     sitemap: "https://portafolio-agustinasaad.vercel.app/sitemap.xml",
