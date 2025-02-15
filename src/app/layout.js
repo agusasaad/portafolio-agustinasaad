@@ -14,7 +14,7 @@ export const metadata = {
   metadataBase: new URL("https://portafolio-agustinasaad.vercel.app/"),
   title: "Agustín Asaad - Front End Developer",
   description:
-    "Desarrollador Front End especializado en React y Next.js, creando aplicaciones web optimizadas y experiencias de usuario intuitivas. ¡Descubre mis proyectos y desafíos profesionales!",
+    "Desarrollador Front End en React y Next.js, creando aplicaciones web optimizadas y experiencias de usuario. Descubre mis proyectos y desafíos profesionales.",
   keywords:
     "Agustín Asaad, Front End Developer, desarrollador web, React, Next.js, desarrollo de aplicaciones, interfaces de usuario, diseño web, JavaScript, desarrollo web, UI/UX, optimización de rendimiento, integración de APIs, desarrollo responsivo, animaciones web, tecnologías modernas",
   author: "Agustín Asaad",
