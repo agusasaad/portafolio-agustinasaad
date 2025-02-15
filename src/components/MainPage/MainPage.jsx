@@ -3,8 +3,8 @@ import { useEffect, useRef } from "react";
 import TechnologiesCarrucel from "../TechnologiesCarrucel/TechnologiesCarrucel";
 import styles from "./MainPage.module.css";
 import { mainPageAnimation } from "@/utils/animationGsap/AnimationGsap";
-import { useLanguageStore } from "@/app/store";
 import { useTranslation } from "@/Hooks/useTranslations";
+import backgroundImage from "@/assets/images/backgroundMainPage.webp";
 
 const MainPage = () => {
   const t = useTranslation();
@@ -18,7 +18,12 @@ const MainPage = () => {
   }, []);
 
   return (
-    <section className={styles.container}>
+    <section
+      className={styles.container}
+      style={{
+        backgroundImage: `url(${backgroundImage.src})`,
+      }}
+    >
       <div className={styles.content_text}>
         <span ref={subtitleRef}> {t.mainPage.subtitle} &#128075;</span>
         <div className={styles.content_title} ref={titleRef}>
