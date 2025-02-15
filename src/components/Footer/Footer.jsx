@@ -68,52 +68,64 @@ const Footer = () => {
         </div>
         <div className={styles.content_list}>
           <ul className={styles.navigate} ref={list_one}>
-            <Link
-              href={"/"}
-              onMouseEnter={() => setScaling(true)}
-              onMouseLeave={() => setScaling(false)}
-            >
-              <li>{t.navbar.home}</li>
-            </Link>
-            <Link
-              href={"/detail/1"}
-              onMouseEnter={() => setScaling(true)}
-              onMouseLeave={() => setScaling(false)}
-            >
-              <li>{t.navbar.projects}</li>
-            </Link>
-            <Link
-              href={"/contactme"}
-              onMouseEnter={() => setScaling(true)}
-              onMouseLeave={() => setScaling(false)}
-            >
-              <li>{t.navbar.contact}</li>
-            </Link>
+            <li>
+              <Link
+                href={"/"}
+                onMouseEnter={() => setScaling(true)}
+                onMouseLeave={() => setScaling(false)}
+              >
+                {t.navbar.home}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={"/detail/1"}
+                onMouseEnter={() => setScaling(true)}
+                onMouseLeave={() => setScaling(false)}
+              >
+                {t.navbar.projects}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={"/contactme"}
+                onMouseEnter={() => setScaling(true)}
+                onMouseLeave={() => setScaling(false)}
+              >
+                {t.navbar.contact}
+              </Link>
+            </li>
           </ul>
           <ul className={styles.navigate} ref={list_two}>
-            <Link
-              href={"https://www.linkedin.com/in/agustin-asaad/"}
-              target="_blank"
-              onMouseEnter={() => setScaling(true)}
-              onMouseLeave={() => setScaling(false)}
-            >
-              <li>Linkedin</li>
-            </Link>
-            <Link
-              href={"https://github.com/agusasaad?tab=repositories"}
-              target="_blank"
-              onMouseEnter={() => setScaling(true)}
-              onMouseLeave={() => setScaling(false)}
-            >
-              <li>GitHub</li>
-            </Link>
-            <Link
-              href="mailto:agustinasaad@gmail.com"
-              onMouseEnter={() => setScaling(true)}
-              onMouseLeave={() => setScaling(false)}
-            >
-              <li>Gmail</li>
-            </Link>
+            <li>
+              <Link
+                href={"https://www.linkedin.com/in/agustin-asaad/"}
+                target="_blank"
+                onMouseEnter={() => setScaling(true)}
+                onMouseLeave={() => setScaling(false)}
+              >
+                Linkedin
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={"https://github.com/agusasaad?tab=repositories"}
+                target="_blank"
+                onMouseEnter={() => setScaling(true)}
+                onMouseLeave={() => setScaling(false)}
+              >
+                GitHub
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="mailto:agustinasaad@gmail.com"
+                onMouseEnter={() => setScaling(true)}
+                onMouseLeave={() => setScaling(false)}
+              >
+                Gmail
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
