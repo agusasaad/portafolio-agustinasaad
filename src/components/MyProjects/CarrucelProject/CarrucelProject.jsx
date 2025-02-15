@@ -30,6 +30,7 @@ const CarrucelProject = forwardRef((props, ref) => {
                 width={700}
                 height={700}
                 alt={project.name}
+                loading="lazy"
               />
             </div>
           </Link>
