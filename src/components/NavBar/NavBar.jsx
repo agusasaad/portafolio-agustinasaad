@@ -62,8 +62,8 @@ const NavBar = () => {
               width={50}
               height={50}
               alt="image-profile"
-              priority={true}
-              quality={80}
+              quality={50}
+              priority
             />
           </Link>
           <div className={styles.text_info}>
