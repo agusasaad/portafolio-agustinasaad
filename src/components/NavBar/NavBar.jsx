@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import styles from "./NavBar.module.css";
-import user_profile from "@/assets/images/image_profile.jpg";
+import user_profile from "@/assets/images/image_profile (1).webp";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Hamburguer from "@/assets/icons/Hamburguer";
