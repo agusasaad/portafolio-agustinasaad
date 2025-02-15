@@ -36,7 +36,7 @@ export const translations = {
             "Conectando interfaces con APIs REST o GraphQL para una comunicación eficiente con el backend.",
         },
         card_3: {
-          title: "Animaciones y Diseño UI/UX",
+          title: "Animaciones y Diseño UX/UI",
           description:
             "Diseñando interfaces atractivas con animaciones fluidas y experiencias interactivas.",
         },
@@ -177,7 +177,7 @@ export const translations = {
             "Connecting interfaces with REST or GraphQL APIs for efficient backend communication.",
         },
         card_3: {
-          title: "Animations & UI/UX Design",
+          title: "Animations & UX/UI Design",
           description:
             "Designing attractive interfaces with smooth animations and interactive experiences.",
         },
