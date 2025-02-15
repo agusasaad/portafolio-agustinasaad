@@ -84,30 +84,36 @@ const NavBar = () => {
         </div>
 
         <ul className={styles.list}>
-          <Link
-            href={"/"}
-            onClick={() => setShowMenu(false)}
-            onMouseEnter={() => setScaling(true)}
-            onMouseLeave={() => setScaling(false)}
-          >
-            <li>{t.navbar.home}</li>
-          </Link>
-          <Link
-            href={"/detail/1"}
-            onClick={() => setShowMenu(false)}
-            onMouseEnter={() => setScaling(true)}
-            onMouseLeave={() => setScaling(false)}
-          >
-            <li>{t.navbar.projects}</li>
-          </Link>
-          <Link
-            href={"/#contactme"}
-            onClick={() => setShowMenu(false)}
-            onMouseEnter={() => setScaling(true)}
-            onMouseLeave={() => setScaling(false)}
-          >
-            <li>{t.navbar.contact}</li>
-          </Link>
+          <li>
+            <Link
+              href={"/"}
+              onClick={() => setShowMenu(false)}
+              onMouseEnter={() => setScaling(true)}
+              onMouseLeave={() => setScaling(false)}
+            >
+              {t.navbar.home}
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"/detail/1"}
+              onClick={() => setShowMenu(false)}
+              onMouseEnter={() => setScaling(true)}
+              onMouseLeave={() => setScaling(false)}
+            >
+              {t.navbar.projects}
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"/#contactme"}
+              onClick={() => setShowMenu(false)}
+              onMouseEnter={() => setScaling(true)}
+              onMouseLeave={() => setScaling(false)}
+            >
+              {t.navbar.contact}
+            </Link>
+          </li>
           <li className={styles.li_button}>
             <button
               aria-label="translate"
