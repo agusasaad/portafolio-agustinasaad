@@ -21,6 +21,7 @@
   padding: 0;
   margin: 0;
   scrollbar-width: none;
+  /* cursor: none !important; */
 }
 
 html,
@@ -34,7 +35,6 @@ body {
   color: white;
   position: relative;
   scroll-behavior: smooth;
-  cursor: none;
 }
 
 a {
@@ -57,10 +57,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-  html,
-  body {
-    cursor: auto;
-  }
   a {
     cursor: pointer;
   }

@@ -6,10 +6,10 @@
   height: 13px;
   background-color: white;
   border-radius: 50%;
-  pointer-events: none;
+  pointer-events: none !important;
   transition: all 0.2s ease-out;
   transform-origin: center;
-  z-index: 100;
+  z-index: 9999;
   cursor: none;
 }
 
