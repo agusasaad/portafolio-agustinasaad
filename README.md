@@ -2,6 +2,8 @@
 
 Bienvenidos a mi portafolio personal. Aquí encontrarán una colección de mis logros y habilidades. Desde diseños web hasta soluciones innovadoras, este portafolio refleja mi pasión por la programación.
 
+# Descripción 
+
 En este portafolio podrás explorar una variedad de proyectos que he desarrollado a lo largo de mi carrera como desarrollador. Cada uno de ellos refleja mi capacidad para crear soluciones eficientes y atractivas, utilizando tecnologías modernas.
 
 ## 🛠️ Tecnologías Utilizadas
