@@ -3,7 +3,7 @@
   max-width: 1440px;
   height: auto;
   padding: 200px 0px 100px 0px;
-  background-image: url("./../../assets/images/backgroundMainPage.webp");
+  background-image: url("./../../assets/images/background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -104,7 +104,6 @@
 @media (max-width: 480px) {
   .container {
     padding: 170px 0px 100px 0px;
-    background-image: url("./../../assets/images/iPhone\ SE\ -\ 1.png");
   }
   .content_text .content_title h1 {
     font-size: 85px;
