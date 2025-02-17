@@ -25,9 +25,9 @@ const CursorPoiter = () => {
 
     const moveCursor = () => {
       position.current.x +=
-        (targetPosition.current.x - position.current.x) * 0.5;
+        (targetPosition.current.x - position.current.x) * 1.2;
       position.current.y +=
-        (targetPosition.current.y - position.current.y) * 0.5;
+        (targetPosition.current.y - position.current.y) * 1.2;
 
       if (cursorRef.current) {
         cursorRef.current.style.left = `${position.current.x}px`;
