@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://portafolio-agustinasaad.vercel.app/"),
+  metadataBase: new URL("https://agustinasaad.com.ar/"),
   title: "Agustín Asaad - Front End Developer",
   description:
     "Desarrollador Front End en React y Next.js, creando aplicaciones web optimizadas y experiencias de usuario. Descubre mis proyectos y desafíos profesionales.",
@@ -22,8 +22,8 @@ export const metadata = {
     title: "Agustín Asaad - Front End Developer",
     description:
       "Desarrollador Front End con experiencia en React y Next.js, especializado en la creación de interfaces intuitivas y optimizadas.",
-    images: "https://portafolio-agustinasaad.vercel.app/image.jpeg",
-    url: "https://portafolio-agustinasaad.vercel.app/",
+    images: "https://agustinasaad.com.ar/image.jpeg",
+    url: "https://agustinasaad.com.ar/",
     type: "website",
     site_name: "Agustín Asaad - Portfolio",
   },
@@ -35,7 +35,7 @@ export const metadata = {
     title: "Agustín Asaad - Front End Developer",
     description:
       "Soy desarrollador Front End con experiencia en React y Next.js. Diseño y desarrollo aplicaciones web con un enfoque en rendimiento y usabilidad.",
-    images: "https://portafolio-agustinasaad.vercel.app/image.jpeg",
+    images: "https://agustinasaad.com.ar/image.jpeg",
   },
 };
 
