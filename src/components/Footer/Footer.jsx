@@ -88,7 +88,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href={"/contactme"}
+                href={"#contactme"}
                 onMouseEnter={() => setScaling(true)}
                 onMouseLeave={() => setScaling(false)}
               >
