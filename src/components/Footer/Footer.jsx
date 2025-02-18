@@ -1,4 +1,6 @@
 "use client";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 import styles from "./Footer.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -6,15 +8,16 @@ import user_image from "@/assets/images/user_footer.webp";
 import { useTranslation } from "@/Hooks/useTranslations";
 import ArrowOutward from "@/assets/icons/ArrowOutward";
 import { useLanguageStore } from "@/app/store";
-import { useEffect, useRef } from "react";
 import { footerAnimation } from "@/utils/animationGsap/AnimationGsap";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 const Footer = () => {
-  //Zustand
+  const pathname = usePathname();
   const t = useTranslation();
   const { setScaling } = useLanguageStore();
 
-  //Ref
+  // Refs
   const container = useRef(null);
   const user = useRef(null);
   const paragraph = useRef(null);
@@ -26,18 +29,27 @@ const Footer = () => {
   const copyrigth_three = useRef(null);
 
   useEffect(() => {
-    footerAnimation({
-      container,
-      user,
-      paragraph,
-      list_one,
-      list_two,
-      line,
-      copyrigth_one,
-      copyrigth_two,
-      copyrigth_three,
-    });
-  }, []);
+    if (!pathname.startsWith("/detail")) {
+      const ctx = gsap.context(() => {
+        footerAnimation({
+          container,
+          user,
+          paragraph,
+          list_one,
+          list_two,
+          line,
+          copyrigth_one,
+          copyrigth_two,
+          copyrigth_three,
+        });
+      });
+
+      return () => {
+        ctx.revert();
+        ScrollTrigger.getAll().forEach((st) => st.kill());
+      };
+    }
+  }, [pathname]);
 
   return (
     <footer className={styles.container} ref={container}>
