@@ -67,7 +67,6 @@ const DetailPage = () => {
           width={1200}
           height={500}
           ref={imageRef}
-          placeholder="blur"
         />
         <div className={styles.responsibilities} ref={paragraph_two}>
           <span>{t.detail_projects.title_1}</span>
@@ -107,7 +106,6 @@ const DetailPage = () => {
           width={1200}
           height={500}
           ref={image_two}
-          placeholder="blur"
         />
         <div className={styles.container_button_page}>
           <button aria-label="button-back" onClick={handleBack}>
