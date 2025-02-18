@@ -23,7 +23,7 @@ const CarrucelMobile = forwardRef((props, ref) => {
                 width={500}
                 height={500}
                 alt={project.name}
-                loading="lazy"
+                placeholder="blur"
               />
             </div>
           </Link>
