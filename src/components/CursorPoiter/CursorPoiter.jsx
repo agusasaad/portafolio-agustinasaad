@@ -13,9 +13,8 @@ const CursorPoiter = () => {
   const position = useRef({ x: 0, y: 0 });
   const targetPosition = useRef({ x: 0, y: 0 });
 
-  // Ocultar el cursor predeterminado al montar el componente
   useEffect(() => {
-    document.body.style.cursor = "none"; // Ocultar el cursor predeterminado
+    document.body.style.cursor = "none";
 
     const updateMousePosition = (e) => {
       targetPosition.current = { x: e.clientX, y: e.clientY };
@@ -39,10 +38,9 @@ const CursorPoiter = () => {
 
     moveCursor();
 
-    // Restaurar el cursor predeterminado al desmontarse el componente
     return () => {
       window.removeEventListener("mousemove", updateMousePosition);
-      document.body.style.cursor = "default"; // Restaurar el cursor predeterminado
+      document.body.style.cursor = "default";
     };
   }, []);
 
