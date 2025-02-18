@@ -4,6 +4,7 @@ import styles from "./CursorPoiter.module.css";
 import { useLanguageStore } from "@/app/store";
 import { useTranslation } from "@/Hooks/useTranslations";
 import Copy from "@/assets/icons/Copy";
+import ArrowOutward from "@/assets/icons/ArrowOutward";
 
 const CursorPoiter = () => {
   const { scaling, viewProject, viewCopy } = useLanguageStore();
@@ -61,9 +62,7 @@ const CursorPoiter = () => {
           : "normal",
       }}
     >
-      {viewProject && (
-        <p className={styles.cursorText}>{t.cursorPoiter.text}</p>
-      )}
+      {viewProject && <ArrowOutward width="30px" height="30px" />}
       {viewCopy && (
         <span>
           <Copy width="18px" height="18px" color="white" />
