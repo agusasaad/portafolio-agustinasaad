@@ -25,9 +25,9 @@ const CursorPoiter = () => {
 
     const moveCursor = () => {
       position.current.x +=
-        (targetPosition.current.x - position.current.x) * 1.2;
+        (targetPosition.current.x - position.current.x) * 0.5;
       position.current.y +=
-        (targetPosition.current.y - position.current.y) * 1.2;
+        (targetPosition.current.y - position.current.y) * 0.5;
 
       if (cursorRef.current) {
         cursorRef.current.style.left = `${position.current.x}px`;
@@ -60,6 +60,12 @@ const CursorPoiter = () => {
           : scaling
           ? "difference"
           : "normal",
+
+        transition: scaling
+          ? "all 0.1s ease-out"
+          : viewProject
+          ? "all 0.1s ease-out"
+          : "",
       }}
     >
       {viewProject && <ArrowOutward width="30px" height="30px" />}
