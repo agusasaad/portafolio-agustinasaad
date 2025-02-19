@@ -5,7 +5,7 @@ import styles from "./Footer.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import user_image from "@/assets/images/user_footer.webp";
-import { useTranslation } from "@/hooks/useTranslations";
+import { useTranslation } from "@/Hooks/useTranslations";
 import ArrowOutward from "@/assets/icons/ArrowOutward";
 import { useLanguageStore } from "@/app/store";
 import { footerAnimation } from "@/utils/animationGsap/AnimationGsap";

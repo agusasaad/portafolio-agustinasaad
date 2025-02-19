@@ -3,7 +3,7 @@ import { useLanguageStore } from "@/app/store";
 import { useState, forwardRef } from "react";
 import SwitchToggle from "../SwitchToggle/SwitchToggle";
 import styles from "./ChangeLanguage.module.css";
-import { useTranslation } from "@/hooks/useTranslations";
+import { useTranslation } from "@/Hooks/useTranslations";
 
 const ChangeLanguage = forwardRef(({ showMenuLanguague }, ref) => {
   // Zustand

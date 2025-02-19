@@ -6,7 +6,7 @@ import Image from "next/image";
 import GitHub from "@/assets/icons/GitHub";
 import Url from "@/assets/icons/Url";
 import Link from "next/link";
-import { useTranslation } from "@/hooks/useTranslations";
+import { useTranslation } from "@/Hooks/useTranslations";
 import Back from "@/assets/icons/Back";
 import Next from "@/assets/icons/Next";
 import { useEffect, useRef } from "react";

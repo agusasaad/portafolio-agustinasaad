@@ -1,4 +1,4 @@
-import { useTranslation } from "@/hooks/useTranslations";
+import { useTranslation } from "@/Hooks/useTranslations";
 import SymbioNetCard from "@/assets/images/SymbioNet/Symbionet.webp";
 import SymbionNetFirtBanner from "@/assets/images/SymbioNet/first_banner.webp";
 import SymbioNet from "@/assets/images/SymbioNet/symbionet_detail.webp";
