@@ -5,7 +5,7 @@ import Paint from "@/assets/icons/Paint";
 import styles from "./MyServices.module.css";
 import { useEffect, useRef } from "react";
 import { servicesAnimation } from "@/utils/animationGsap/AnimationGsap";
-import { useTranslation } from "@/Hooks/useTranslations";
+import { useTranslation } from "@/hooks/useTranslations";
 
 const MyServices = () => {
   const t = useTranslation();

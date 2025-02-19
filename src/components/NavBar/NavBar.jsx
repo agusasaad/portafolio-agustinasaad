@@ -8,7 +8,7 @@ import Hamburguer from "@/assets/icons/Hamburguer";
 import Translate from "@/assets/icons/Translate";
 import ArrowDown from "@/assets/icons/ArrowDown";
 import { navBarAnimation } from "@/utils/animationGsap/AnimationGsap";
-import { useTranslation } from "@/Hooks/useTranslations";
+import { useTranslation } from "@/hooks/useTranslations";
 import ChangeLanguage from "../ChangeLanguage/ChangeLanguage";
 import { useLanguageStore } from "@/app/store";
 

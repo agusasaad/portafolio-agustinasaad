@@ -4,7 +4,7 @@ import CarrucelProject from "./CarrucelProject/CarrucelProject";
 import styles from "./MyProjects.module.css";
 import { useEffect, useRef } from "react";
 import { projectAnimation } from "@/utils/animationGsap/AnimationGsap";
-import { useTranslation } from "@/Hooks/useTranslations";
+import { useTranslation } from "@/hooks/useTranslations";
 import CarrucelMobile from "./CarrucelMobile/CarrucelMobile";
 import { useLanguageStore } from "@/app/store";
 import Link from "next/link";

@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import styles from "./CursorPoiter.module.css";
 import { useLanguageStore } from "@/app/store";
-import { useTranslation } from "@/Hooks/useTranslations";
+import { useTranslation } from "@/hooks/useTranslations";
 import Copy from "@/assets/icons/Copy";
 import ArrowOutward from "@/assets/icons/ArrowOutward";
 
