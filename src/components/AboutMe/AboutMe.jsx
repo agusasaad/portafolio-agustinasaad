@@ -3,9 +3,9 @@ import { useEffect, useRef } from "react";
 import SpiningText from "../SpiningText/SpiningText";
 import styles from "./AboutMe.module.css";
 import { aboutMeAnimation } from "@/utils/animationGsap/AnimationGsap";
-import { useTranslation } from "@/hooks/useTranslations";
 import { useLanguageStore } from "@/app/store";
 import Link from "next/link";
+import { useTranslation } from "@/hooks/useTranslations";
 
 const AboutMe = () => {
   const container = useRef(null);

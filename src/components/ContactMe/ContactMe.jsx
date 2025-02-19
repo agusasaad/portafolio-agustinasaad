@@ -4,9 +4,9 @@ import styles from "./ContactMe.module.css";
 import SendEmail from "@/assets/icons/SendEmail";
 import { useEffect, useRef, useState } from "react";
 import { contactMeAnimation } from "@/utils/animationGsap/AnimationGsap";
-import { useTranslation } from "@/hooks/useTranslations";
 import ToastMessage from "../ToastMessage/ToastMessage";
 import { useLanguageStore } from "@/app/store";
+import { useTranslation } from "@/hooks/useTranslations";
 
 const ContactMe = () => {
   const container = useRef(null);

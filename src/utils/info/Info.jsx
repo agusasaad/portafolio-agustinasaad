@@ -1,4 +1,3 @@
-import { useTranslation } from "@/hooks/useTranslations";
 import SymbioNetCard from "@/assets/images/SymbioNet/Symbionet.webp";
 import SymbionNetFirtBanner from "@/assets/images/SymbioNet/first_banner.webp";
 import SymbioNet from "@/assets/images/SymbioNet/symbionet_detail.webp";
@@ -17,6 +16,7 @@ import weCapture_1 from "@/assets/images/WeDevelop/capture_1.webp";
 import grupoZuritaCard from "@/assets/images/GrupoZurita/GrupoZuritaCard.webp";
 import grupoZuritaBanner from "@/assets/images/GrupoZurita/grupoZuritaBanner.webp";
 import grupoZuritaWeb from "@/assets/images/GrupoZurita/paginaWebZurita.webp";
+import { useTranslation } from "@/hooks/useTranslations";
 
 export const getProjects = () => {
   const t = useTranslation();

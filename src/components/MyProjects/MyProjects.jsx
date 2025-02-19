@@ -4,10 +4,10 @@ import CarrucelProject from "./CarrucelProject/CarrucelProject";
 import styles from "./MyProjects.module.css";
 import { useEffect, useRef } from "react";
 import { projectAnimation } from "@/utils/animationGsap/AnimationGsap";
-import { useTranslation } from "@/hooks/useTranslations";
 import CarrucelMobile from "./CarrucelMobile/CarrucelMobile";
 import { useLanguageStore } from "@/app/store";
 import Link from "next/link";
+import { useTranslation } from "@/hooks/useTranslations";
 
 const MyProjects = () => {
   const t = useTranslation();

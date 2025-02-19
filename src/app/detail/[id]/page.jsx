@@ -6,12 +6,12 @@ import Image from "next/image";
 import GitHub from "@/assets/icons/GitHub";
 import Url from "@/assets/icons/Url";
 import Link from "next/link";
-import { useTranslation } from "@/hooks/useTranslations";
 import Back from "@/assets/icons/Back";
 import Next from "@/assets/icons/Next";
 import { useEffect, useRef } from "react";
 import { detailAnimation } from "@/utils/animationGsap/AnimationGsap";
 import { useLanguageStore } from "@/app/store";
+import { useTranslation } from "@/hooks/useTranslations";
 
 const DetailPage = () => {
   const { id } = useParams();
