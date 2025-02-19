@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import TechnologiesCarrucel from "../TechnologiesCarrucel/TechnologiesCarrucel";
 import styles from "./MainPage.module.css";
 import { mainPageAnimation } from "@/utils/animationGsap/AnimationGsap";
-import { useTranslation } from "@/Hooks/useTranslations";
+import { useTranslation } from "@/hooks/useTranslations";
 import localFont from "next/font/local";
 
 const AvenirNextBold = localFont({

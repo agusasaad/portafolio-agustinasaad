@@ -5,7 +5,7 @@ import Modal from "../Modal/Modal";
 import ChangeLanguage from "../ChangeLanguage/ChangeLanguage";
 import { useEffect, useRef, useState } from "react";
 import { useLanguageStore } from "@/app/store";
-import { useTranslation } from "@/Hooks/useTranslations";
+import { useTranslation } from "@/hooks/useTranslations";
 import SwitchToggle from "../SwitchToggle/SwitchToggle";
 import { buttonTranslateAnimate } from "@/utils/animationGsap/AnimationGsap";
 
