@@ -7,7 +7,7 @@ import localFont from "next/font/local";
 import { useTranslation } from "@/hooks/useTranslations";
 
 const AvenirNextBold = localFont({
-  src: "../../fonts/AvenirNext-Bold.woff",
+  src: "../../fonts/AvenirNext-Bold.ttf",
   variable: "--AvenirNext-Bold",
 });
 
