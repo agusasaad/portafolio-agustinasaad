@@ -3,15 +3,21 @@ import { useEffect, useRef } from "react";
 import TechnologiesCarrucel from "../TechnologiesCarrucel/TechnologiesCarrucel";
 import styles from "./MainPage.module.css";
 import { mainPageAnimation } from "@/utils/animationGsap/AnimationGsap";
-import { useTranslation } from "@/Hooks/useTranslations";
+import { useTranslation } from "@/hooks/useTranslations";
+import localFont from "next/font/local";
+
+const AvenirNextBold = localFont({
+  src: "../../fonts/AvenirNext-Bold.woff",
+  variable: "--AvenirNext-Bold",
+});
 
 const MainPage = () => {
   const t = useTranslation();
-
   const subtitleRef = useRef(null);
   const titleRef = useRef(null);
   const description = useRef(null);
   const carrucel = useRef(null);
+
   useEffect(() => {
     mainPageAnimation({ subtitleRef, titleRef, description, carrucel });
   }, []);
@@ -21,8 +27,8 @@ const MainPage = () => {
       <div className={styles.content_text}>
         <span ref={subtitleRef}> {t.mainPage.subtitle} &#128075;</span>
         <div className={styles.content_title} ref={titleRef}>
-          <h1>FrontEnd</h1>
-          <h2>Developer.</h2>
+          <h1 className={AvenirNextBold.className}>FrontEnd</h1>
+          <h2 className={AvenirNextBold.className}>Developer.</h2>
         </div>
         <p ref={description}>{t.mainPage.paragraph}</p>
       </div>
