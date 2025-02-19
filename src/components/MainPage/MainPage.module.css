@@ -34,7 +34,7 @@
 
 .content_text .content_title h1,
 .content_text .content_title h2 {
-  font-family: var(--AvenirNext-Bold) !important;
+  font-family: var(--main-title);
 }
 
 .content_text .content_title h1 {
