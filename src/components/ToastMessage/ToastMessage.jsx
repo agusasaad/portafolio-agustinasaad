@@ -28,7 +28,7 @@ const ToastMessage = ({ onClose, message }) => {
         ease: "power3.in",
         onComplete: onClose,
       });
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [onClose]);
