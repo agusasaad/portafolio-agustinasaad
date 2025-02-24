@@ -27,8 +27,8 @@ const CarrucelProject = forwardRef((props, ref) => {
             <div className={styles.content_image}>
               <Image
                 src={project.imageCard}
-                width={700}
-                height={700}
+                width={550}
+                height={650}
                 alt={project.name}
               />
             </div>
