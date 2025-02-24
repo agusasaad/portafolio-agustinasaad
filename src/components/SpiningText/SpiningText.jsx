@@ -34,7 +34,6 @@ const SpiningText = forwardRef(function SpiningText(props, ref) {
           width={145}
           height={145}
           alt="image_about_me"
-          quality={100}
         />
       </div>
     </div>
