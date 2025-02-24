@@ -109,12 +109,24 @@ const DetailPage = () => {
         />
         <div className={styles.container_button_page}>
           <button aria-label="button-back" onClick={handleBack}>
-            <Back />
-            {t.detail_projects.back}
+            <span>
+              <Back />
+              {t.detail_projects.back}
+            </span>
+            <span>
+              <Back />
+              {t.detail_projects.back}
+            </span>
           </button>
           <button aria-label="button-next" onClick={handleNext}>
-            {t.detail_projects.next}
-            <Next />
+            <span>
+              {t.detail_projects.next}
+              <Next />
+            </span>
+            <span>
+              {t.detail_projects.next}
+              <Next />
+            </span>
           </button>
         </div>
       </div>
