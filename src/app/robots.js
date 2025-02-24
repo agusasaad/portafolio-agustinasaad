@@ -7,6 +7,6 @@ export default function robots() {
         disallow: ["/detail"],
       },
     ],
-    sitemap: "https://portafolio-agustinasaad.vercel.app/sitemap.xml",
+    sitemap: "https://agustinasaad.com.ar/sitemap.xml",
   };
 }
