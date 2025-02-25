@@ -1,17 +1,18 @@
 "use client";
-import Link from "next/link";
+import { useTranslation } from "@/hooks/useTranslations";
 import styles from "./page.module.css";
-import ArrowOutward from "@/assets/icons/ArrowOutward";
 
 const ContactMePage = () => {
+  const t = useTranslation();
+
   return (
     <div className={styles.container}>
       <div className={styles.content_text}>
         <span className={styles.subtitle}>
           <div className={styles.circle}></div>
-          Contact Me
+          {t.formContact.subtitle}
         </span>
-        <h2>Let's work together</h2>
+        <h2>{t.formContact.title}</h2>
       </div>
       <form className={styles.form}>
         <div className={styles.form_group}>
@@ -19,7 +20,7 @@ const ContactMePage = () => {
             type="text"
             id="name"
             name="name"
-            placeholder="First name"
+            placeholder={t.formContact.name}
             required
           />
           <input
@@ -27,7 +28,7 @@ const ContactMePage = () => {
             id="lastname"
             name="lastname"
             required
-            placeholder="Last name"
+            placeholder={t.formContact.lastname}
           />
         </div>
         <div className={styles.form_group}>
@@ -35,14 +36,14 @@ const ContactMePage = () => {
             type="email"
             id="email"
             name="email"
-            placeholder="Email"
+            placeholder={t.formContact.email}
             required
           />
           <input
             type="tel"
             id="telefono"
             name="telefono"
-            placeholder="Phone"
+            placeholder={t.formContact.phone}
             required
           />
         </div>
@@ -50,14 +51,14 @@ const ContactMePage = () => {
           <textarea
             id="message"
             name="message"
-            placeholder="Write a message"
+            placeholder={t.formContact.message}
             required
           ></textarea>
         </div>
-        <button type="submit">Send Message</button>
+        <button type="submit">{t.formContact.button}</button>
       </form>
       <div className={styles.end_text}>
-        <p>Thank you for your visit, have a great day. &#128075;</p>
+        <p>{t.formContact.thanks} &#128075;</p>
       </div>
     </div>
   );

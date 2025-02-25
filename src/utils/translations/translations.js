@@ -116,7 +116,7 @@ export const translations = {
       },
     },
     contactMe: {
-      subtitle: "Hablemos",
+      subtitle: "Contactame",
       title: "Empecemos a crear juntos",
       paragraph: "Demos vida a tus ideas con soluciones innovadoras.",
     },
@@ -138,6 +138,17 @@ export const translations = {
       copyrigth_1: "Todos los derechos reservados.",
       copyrigth_2: "Portafolio creado por ",
       copyrigth_3: "Construido en ",
+    },
+    formContact: {
+      subtitle: "Contactame",
+      title: "Trabajemos juntos",
+      name: "Nombre",
+      lastname: "Apellido",
+      email: "Correo electrónico",
+      phone: "Teléfono",
+      message: "Mensaje",
+      button: "Enviar Mensaje",
+      thanks: "Gracias por tu visita, que tengas un gran día.",
     },
   },
   en: {
@@ -258,7 +269,7 @@ export const translations = {
       },
     },
     contactMe: {
-      subtitle: "Get in touch",
+      subtitle: "Contact Me",
       title: "Let's start creating together",
       paragraph: "Let's bring your ideas to life with innovative solutions.",
     },
@@ -280,6 +291,17 @@ export const translations = {
       copyrigth_1: "All rights reserved.",
       copyrigth_2: "Portfolio created by ",
       copyrigth_3: "Built with ",
+    },
+    formContact: {
+      subtitle: "Contact Me",
+      title: "Let's work together",
+      name: "Name",
+      lastname: "Lastname",
+      email: "Email",
+      phone: "Phone",
+      message: "Message",
+      button: "Send Message",
+      thanks: "Thank you for your visit, have a great day.",
     },
   },
 };
