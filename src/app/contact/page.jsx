@@ -22,6 +22,7 @@ const ContactMePage = () => {
             name="name"
             placeholder={t.formContact.name}
             required
+            autoComplete="off"
           />
           <input
             type="text"
@@ -29,6 +30,7 @@ const ContactMePage = () => {
             name="lastname"
             required
             placeholder={t.formContact.lastname}
+            autoComplete="off"
           />
         </div>
         <div className={styles.form_group}>
@@ -38,6 +40,7 @@ const ContactMePage = () => {
             name="email"
             placeholder={t.formContact.email}
             required
+            autoComplete="off"
           />
           <input
             type="tel"
@@ -45,6 +48,7 @@ const ContactMePage = () => {
             name="telefono"
             placeholder={t.formContact.phone}
             required
+            autoComplete="off"
           />
         </div>
         <div className={styles.form_group}>
