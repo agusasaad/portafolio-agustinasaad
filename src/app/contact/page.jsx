@@ -7,19 +7,11 @@ const ContactMePage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content_text}>
-        <div className={styles.subtitle_and_date}>
-          <span>Contact Me</span>
-        </div>
+        <span className={styles.subtitle}>
+          <div className={styles.circle}></div>
+          Contact Me
+        </span>
         <h2>Let's work together</h2>
-        <p>
-          I'd love to learn more about your project and how I can assist you.
-          Feel free to share your project details using the form below. If you
-          prefer to email instead, you can reach out to me at.{" "}
-          <Link href={"mailto:agusasaad1099@hotmail.com"}>
-            agusasaad1099@hotmail.com{" "}
-            <ArrowOutward color="white" width="18px" height="18px" />
-          </Link>
-        </p>
       </div>
       <form className={styles.form}>
         <div className={styles.form_group}>

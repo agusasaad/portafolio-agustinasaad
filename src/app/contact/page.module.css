@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  padding: 150px 15px 70px 15px;
+  padding: 120px 15px 100px 15px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -16,22 +16,32 @@
 .content_text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 15px;
 }
 
-.content_text .subtitle_and_date {
-  width: 100%;
+.content_text .subtitle {
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  border: 1px solid var(--border);
+  background-color: var(--bg);
+  padding: 5px 15px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
-.subtitle_and_date span {
-  color: var(--subtitle);
-  font-weight: 300;
-  font-size: 18px;
+.circle {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  margin-right: 7px;
 }
 
 .content_text .subtitle {
@@ -64,17 +74,7 @@
   color: var(--title);
   letter-spacing: -1.5px;
   line-height: 65px;
-  text-wrap: balance;
-}
-
-.content_text p {
-  color: var(--paragraph);
-  font-weight: 300;
-  line-height: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
+  text-align: center;
 }
 
 .content_text p a {
@@ -151,30 +151,28 @@
   justify-content: center;
   align-items: center;
   margin-top: 5px;
-  color: var(--paragraph);
+  color: white;
   font-weight: 300;
   line-height: 30px;
   font-size: 16px;
+  opacity: 90%;
 }
 
 @media (max-width: 768px) {
   .content_text {
-    gap: 15px;
+    gap: 10px;
   }
   .content_text h2 {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 50px;
+    letter-spacing: -1px;
   }
 }
 
 @media (max-width: 425px) {
   .container {
-    padding: 120px 15px 50px 15px;
+    padding: 120px 15px 100px 15px;
     gap: 20px;
-  }
-  .content_text p {
-    font-size: 15px;
-    line-height: 25px;
   }
 
   .container .form .form_group {
