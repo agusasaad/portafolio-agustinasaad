@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import styles from "./page.module.css";
 import ArrowOutward from "@/assets/icons/ArrowOutward";
@@ -6,10 +7,9 @@ const ContactMePage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content_text}>
-        <span className={styles.subtitle}>
-          <div className={styles.circle}></div>
-          Contact Me
-        </span>
+        <div className={styles.subtitle_and_date}>
+          <span>Contact Me</span>
+        </div>
         <h2>Let's work together</h2>
         <p>
           I'd love to learn more about your project and how I can assist you.
