@@ -116,7 +116,7 @@ export const translations = {
       },
     },
     contactMe: {
-      subtitle: "Contactame",
+      subtitle: "Hablemos",
       title: "Empecemos a crear juntos",
       paragraph: "Demos vida a tus ideas con soluciones innovadoras.",
     },
@@ -258,7 +258,7 @@ export const translations = {
       },
     },
     contactMe: {
-      subtitle: "Contact Me",
+      subtitle: "Get in touch",
       title: "Let's start creating together",
       paragraph: "Let's bring your ideas to life with innovative solutions.",
     },

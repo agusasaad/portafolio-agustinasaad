@@ -65,8 +65,7 @@
 }
 
 .content p {
-  color: white;
-  opacity: 0.8;
+  color: var(--paragraph);
   font-weight: 300;
   line-height: 30px;
   text-align: center;

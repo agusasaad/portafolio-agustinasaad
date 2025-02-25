@@ -108,7 +108,7 @@ const NavBar = () => {
           </li>
           <li>
             <Link
-              href={"/#contactme"}
+              href={"/contact"}
               onClick={() => setShowMenu(false)}
               onMouseEnter={() => setScaling(true)}
               onMouseLeave={() => setScaling(false)}
