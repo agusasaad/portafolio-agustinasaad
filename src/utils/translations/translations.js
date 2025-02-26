@@ -149,6 +149,7 @@ export const translations = {
       message: "Mensaje",
       button: "Enviar Mensaje",
       thanks: "Gracias por tu visita, que tengas un gran día.",
+      toast: "Formulario enviado correctamente.",
     },
   },
   en: {
@@ -302,6 +303,7 @@ export const translations = {
       message: "Message",
       button: "Send Message",
       thanks: "Thank you for your visit, have a great day.",
+      toast: "Form submitted successfully.",
     },
   },
 };

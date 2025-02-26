@@ -1,15 +1,41 @@
 "use client";
 import { useTranslation } from "@/hooks/useTranslations";
 import styles from "./page.module.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { animateFormContact } from "@/utils/animationGsap/AnimationGsap";
+import emailjs from "@emailjs/browser";
+import Spinner from "@/assets/icons/Spinner";
+import ToastMessage from "@/components/ToastMessage/ToastMessage";
 
 const ContactMePage = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+
   const t = useTranslation();
   const subtitleRef = useRef(null);
   const titleRef = useRef(null);
   const formRef = useRef(null);
   const endTextRef = useRef(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    emailjs
+      .sendForm("default_service", "template_4luuyes", formRef.current, {
+        publicKey: "AvKV6TnFtizcS_CD1",
+      })
+      .then(() => {
+        console.log("SUCCESS!");
+        formRef.current.reset();
+        setShowToast(true);
+      })
+      .catch((error) => {
+        console.log("FAILED...", error);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  };
 
   useEffect(() => {
     animateFormContact({ subtitleRef, titleRef, formRef, endTextRef });
@@ -24,7 +50,7 @@ const ContactMePage = () => {
         </span>
         <h2 ref={titleRef}>{t.formContact.title}</h2>
       </div>
-      <form className={styles.form} ref={formRef}>
+      <form onSubmit={handleSubmit} className={styles.form} ref={formRef}>
         <div className={styles.form_group}>
           <input
             type="text"
@@ -69,11 +95,19 @@ const ContactMePage = () => {
             required
           ></textarea>
         </div>
-        <button type="submit">{t.formContact.button}</button>
+        <button type="submit">
+          {isLoading ? <Spinner /> : t.formContact.button}
+        </button>
       </form>
       <div className={styles.end_text} ref={endTextRef}>
         <p>{t.formContact.thanks} &#128075;</p>
       </div>
+      {showToast && (
+        <ToastMessage
+          message={t.formContact.toast}
+          onClose={() => setShowToast(false)}
+        />
+      )}
     </div>
   );
 };
