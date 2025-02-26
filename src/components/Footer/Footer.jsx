@@ -29,7 +29,7 @@ const Footer = () => {
   const copyrigth_three = useRef(null);
 
   useEffect(() => {
-    if (!pathname.startsWith("/detail")) {
+    if (!pathname.startsWith("/detail") || !pathname.startsWith("/contact")) {
       const ctx = gsap.context(() => {
         footerAnimation({
           container,
