@@ -1,9 +1,6 @@
 .container {
   width: 100%;
   padding: 120px 15px 100px 15px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,6 +108,7 @@
   border-radius: 10px;
   color: white;
   font-size: 16px;
+  cursor: none;
 }
 
 .container .form .form_group input:focus {
@@ -128,6 +126,7 @@
   border-radius: 10px;
   font-size: 16px;
   color: white;
+  cursor: none;
 }
 
 .container .form .form_group textarea:focus {
@@ -175,13 +174,12 @@
     gap: 20px;
   }
 
-  .container .form .form_group {
+  /* .container .form .form_group {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-  }
+  } */
 
   .container .form .form_group input {
     font-size: 15px;
