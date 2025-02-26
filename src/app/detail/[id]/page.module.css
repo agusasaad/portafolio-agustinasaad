@@ -115,7 +115,7 @@
 .container_button_page button {
   position: relative;
   overflow: hidden;
-  height: 33px;
+  height: 35px;
 }
 
 .container_button_page button span {
@@ -126,19 +126,19 @@
   font-weight: 500;
   color: var(--title);
   letter-spacing: -0.5px;
-  line-height: 25px;
+  line-height: 35px;
   transition: transform 0.3s ease;
 }
 
 .container_button_page button span:nth-of-type(2) {
   position: absolute;
-  top: 33px;
+  top: 35px;
   left: 0;
 }
 
 .container_button_page button:hover span:nth-of-type(1),
 .container_button_page button:hover span:nth-of-type(2) {
-  transform: translateY(-33px);
+  transform: translateY(-37px);
 }
 
 @media (max-width: 1300px) {
