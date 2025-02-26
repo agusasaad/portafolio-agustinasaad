@@ -118,7 +118,8 @@ export const translations = {
     contactMe: {
       subtitle: "Ponte en contacto",
       title: "Empecemos a crear juntos",
-      paragraph: "Transforma tus ideas en soluciones innovadoras.",
+      paragraph:
+        "Transforma tus ideas en soluciones innovadoras para tu sitio web.",
     },
     detail_projects: {
       title_1: "Responsabilidades",
@@ -272,7 +273,8 @@ export const translations = {
     contactMe: {
       subtitle: "Get in touch",
       title: "Let's start creating together",
-      paragraph: "Transform your ideas into innovative solutions.",
+      paragraph:
+        "Transform your ideas into innovative solutions for your website.",
     },
     detail_projects: {
       title_1: "Responsibilities",
