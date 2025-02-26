@@ -149,12 +149,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
   color: white;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 30px;
   font-size: 16px;
-  opacity: 90%;
 }
 
 @media (max-width: 768px) {
@@ -191,7 +189,7 @@
   }
 
   .end_text {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
   }
 }
