@@ -16,7 +16,7 @@ const SpiningText = forwardRef(function SpiningText(props, ref) {
     <div className={styles.container} ref={ref}>
       <div className={styles.spinning_text}>
         <div className={styles.text_content}>
-          {t.aboutMe.spinnin.split("").map((letter, index) => (
+          {text.split("").map((letter, index) => (
             <span
               key={index}
               style={{

@@ -33,7 +33,7 @@ export const translations = {
         card_2: {
           title: "Integración de API y Backend",
           description:
-            "Conectando interfaces con APIs REST o GraphQL para una comunicación eficiente con el backend.",
+            "Conectando interfaces con APIs REST para una comunicación eficiente con el backend.",
         },
         card_3: {
           title: "Animaciones y Diseño UX/UI",
@@ -186,7 +186,7 @@ export const translations = {
         card_2: {
           title: "API & Backend Integration",
           description:
-            "Connecting interfaces with REST or GraphQL APIs for efficient backend communication.",
+            "Connecting interfaces to REST APIs for efficient backend communication.",
         },
         card_3: {
           title: "Animations & UX/UI Design",
