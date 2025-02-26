@@ -352,3 +352,33 @@ export const footerAnimation = ({
     "<"
   );
 };
+
+export const animateFormContact = ({
+  subtitleRef,
+  titleRef,
+  formRef,
+  endTextRef,
+}) => {
+  gsap.fromTo(
+    [
+      subtitleRef.current,
+      titleRef.current,
+      formRef.current,
+      endTextRef.current,
+    ],
+    {
+      y: 100,
+      opacity: 0,
+      visibility: "hidden",
+    },
+    {
+      opacity: 1,
+      y: 0,
+      visibility: "visible",
+      ease: "power3.out",
+      duration: 1.5,
+      stagger: 0.3,
+      delay: 0.5,
+    }
+  );
+};

@@ -1,20 +1,30 @@
 "use client";
 import { useTranslation } from "@/hooks/useTranslations";
 import styles from "./page.module.css";
+import { useEffect, useRef } from "react";
+import { animateFormContact } from "@/utils/animationGsap/AnimationGsap";
 
 const ContactMePage = () => {
   const t = useTranslation();
+  const subtitleRef = useRef(null);
+  const titleRef = useRef(null);
+  const formRef = useRef(null);
+  const endTextRef = useRef(null);
+
+  useEffect(() => {
+    animateFormContact({ subtitleRef, titleRef, formRef, endTextRef });
+  }, []);
 
   return (
     <div className={styles.container}>
       <div className={styles.content_text}>
-        <span className={styles.subtitle}>
+        <span className={styles.subtitle} ref={subtitleRef}>
           <div className={styles.circle}></div>
           {t.formContact.subtitle}
         </span>
-        <h2>{t.formContact.title}</h2>
+        <h2 ref={titleRef}>{t.formContact.title}</h2>
       </div>
-      <form className={styles.form}>
+      <form className={styles.form} ref={formRef}>
         <div className={styles.form_group}>
           <input
             type="text"
@@ -61,7 +71,7 @@ const ContactMePage = () => {
         </div>
         <button type="submit">{t.formContact.button}</button>
       </form>
-      <div className={styles.end_text}>
+      <div className={styles.end_text} ref={endTextRef}>
         <p>{t.formContact.thanks} &#128075;</p>
       </div>
     </div>
