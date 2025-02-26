@@ -180,6 +180,10 @@
     gap: 10px;
   }
 
+  .container .form .form_group:nth-of-type(2) {
+    flex-direction: column;
+  }
+
   .container .form .form_group input {
     font-size: 15px;
   }
