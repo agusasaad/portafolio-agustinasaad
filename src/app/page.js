@@ -1,12 +1,10 @@
 "use client";
-import dynamic from "next/dynamic";
-import styles from "./page.module.css";
 import MainPage from "@/components/MainPage/MainPage";
-
-const AboutMe = dynamic(() => import("@/components/AboutMe/AboutMe"));
-const MyProjects = dynamic(() => import("@/components/MyProjects/MyProjects"));
-const MyServices = dynamic(() => import("@/components/MyServices/MyServices"));
-const ContactMe = dynamic(() => import("@/components/ContactMe/ContactMe"));
+import styles from "./page.module.css";
+import AboutMe from "@/components/AboutMe/AboutMe";
+import MyProjects from "@/components/MyProjects/MyProjects";
+import MyServices from "@/components/MyServices/MyServices";
+import ContactMe from "@/components/ContactMe/ContactMe";
 
 export default function Home() {
   return (
