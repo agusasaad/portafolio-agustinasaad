@@ -9,7 +9,7 @@ import ArrowOutward from "@/assets/icons/ArrowOutward";
 import { useLanguageStore } from "@/app/store";
 import { footerAnimation } from "@/utils/animationGsap/AnimationGsap";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import { useTranslation } from "@/hooks/useTranslations";
 
 const Footer = () => {
@@ -29,7 +29,7 @@ const Footer = () => {
   const copyrigth_three = useRef(null);
 
   useEffect(() => {
-    if (!pathname.startsWith("/detail") || !pathname.startsWith("/contact")) {
+    if (!pathname.startsWith("/detail") && !pathname.startsWith("/contact")) {
       const ctx = gsap.context(() => {
         footerAnimation({
           container,

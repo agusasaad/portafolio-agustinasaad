@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 //Animation Button Translate
 export const buttonTranslateAnimate = ({ buttonTranslateRef }) => {
   gsap.from(buttonTranslateRef.current, {
@@ -77,7 +78,6 @@ export const aboutMeAnimation = ({
   paragraph,
   button,
 }) => {
-  gsap.registerPlugin(ScrollTrigger);
   gsap.from(imageProfile.current, {
     opacity: 0,
     scale: 0.2,
@@ -185,8 +185,6 @@ export const projectAnimation = ({
 };
 //Animaciones MyServices
 export const servicesAnimation = ({ container, title, cardsRef }) => {
-  gsap.registerPlugin(ScrollTrigger);
-
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: container.current,
@@ -280,6 +278,7 @@ export const detailAnimation = ({
     }
   );
 };
+//Animaciones footer
 export const footerAnimation = ({
   container,
   user,
@@ -352,7 +351,7 @@ export const footerAnimation = ({
     "<"
   );
 };
-
+//Animaciones formContact
 export const animateFormContact = ({
   subtitleRef,
   titleRef,
