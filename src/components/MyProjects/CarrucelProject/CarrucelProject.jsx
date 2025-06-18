@@ -1,15 +1,15 @@
-import { forwardRef } from "react";
-import { getProjects } from "@/utils/info/Info"; // Importa la función getProjects
-import styles from "./CarrucelProject.module.css";
-import Image from "next/image";
-import Link from "next/link";
-import { useLanguageStore } from "@/app/store";
+import { forwardRef } from 'react'
+import { getProjects } from '@/utils/info/Info'
+import styles from './CarrucelProject.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useLanguageStore } from '@/app/store'
 
 const CarrucelProject = forwardRef((props, ref) => {
-  const projects = getProjects();
-  const copyProject = [...projects, ...projects];
+  const projects = getProjects()
+  const copyProject = [...projects, ...projects]
 
-  const { setViewProject } = useLanguageStore();
+  const { setViewProject } = useLanguageStore()
 
   return (
     <div className={styles.slider}>
@@ -36,7 +36,7 @@ const CarrucelProject = forwardRef((props, ref) => {
         ))}
       </div>
     </div>
-  );
-});
+  )
+})
 
-export default CarrucelProject;
+export default CarrucelProject
