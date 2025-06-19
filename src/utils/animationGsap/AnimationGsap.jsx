@@ -1,17 +1,17 @@
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 //Animation Button Translate
 export const buttonTranslateAnimate = ({ buttonTranslateRef }) => {
   gsap.from(buttonTranslateRef.current, {
     opacity: 0,
     scale: 0.1,
-    ease: "power2",
+    ease: 'power2',
     duration: 0.5,
     delay: 2,
-  });
-};
+  })
+}
 //Animaciones navbar
 export const navBarAnimation = ({ navBarContainer, circleRef }) => {
   gsap.fromTo(
@@ -19,27 +19,27 @@ export const navBarAnimation = ({ navBarContainer, circleRef }) => {
     {
       y: -50,
       opacity: 0,
-      visibility: "hidden",
+      visibility: 'hidden',
     },
     {
       opacity: 1,
       y: 0,
       duration: 1.5,
-      ease: "back.inOut",
+      ease: 'back.inOut',
       stagger: 0.5,
-      visibility: "visible",
+      visibility: 'visible',
       delay: 0.3,
     }
-  );
+  )
 
   gsap.to(circleRef.current, {
     scale: 2.5,
     opacity: 0,
-    ease: "power1",
+    ease: 'power1',
     repeat: -1,
     duration: 1.3,
-  });
-};
+  })
+}
 //Animaciones MainPage
 export const mainPageAnimation = ({
   subtitleRef,
@@ -56,20 +56,20 @@ export const mainPageAnimation = ({
     ],
     {
       y: 100,
-      opacity: 0,
-      visibility: "hidden",
+      // opacity: 0,
+      // visibility: "hidden",
     },
     {
       opacity: 1,
       y: 0,
-      visibility: "visible",
-      ease: "power3.out",
+      visibility: 'visible',
+      ease: 'power3.out',
       duration: 1.5,
       stagger: 0.3,
       delay: 0.5,
     }
-  );
-};
+  )
+}
 //Animaciones AboutMe
 export const aboutMeAnimation = ({
   container,
@@ -81,30 +81,30 @@ export const aboutMeAnimation = ({
   gsap.from(imageProfile.current, {
     opacity: 0,
     scale: 0.2,
-    ease: "power2",
+    ease: 'power2',
     duration: 1.2,
     delay: 0.2,
     scrollTrigger: {
       trigger: container.current,
-      start: "top 80%",
-      end: "bottom bottom",
+      start: 'top 80%',
+      end: 'bottom bottom',
     },
-  });
+  })
 
   gsap.from([title.current, paragraph.current, button.current], {
     opacity: 0,
     y: 100,
-    ease: "power2",
+    ease: 'power2',
     duration: 1.2,
     stagger: 0.2,
     delay: 0.5,
     scrollTrigger: {
       trigger: container.current,
-      start: "top 80%",
-      end: "bottom bottom",
+      start: 'top 80%',
+      end: 'bottom bottom',
     },
-  });
-};
+  })
+}
 //Animaciones MyProjects
 export const projectAnimation = ({
   container,
@@ -116,107 +116,107 @@ export const projectAnimation = ({
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: container.current,
-      start: "top 60%",
-      end: "bottom top",
+      start: 'top 60%',
+      end: 'bottom top',
     },
-  });
+  })
 
   tl.fromTo(
     title.current,
-    { y: 100, opacity: 0, visibility: "hidden" },
+    { y: 100, opacity: 0, visibility: 'hidden' },
     {
       y: 0,
       opacity: 1,
-      visibility: "visible",
+      visibility: 'visible',
       duration: 0.8,
-      ease: "power2",
+      ease: 'power2',
     }
-  );
+  )
 
-  if (window.matchMedia("(max-width: 768px)").matches) {
+  if (window.matchMedia('(max-width: 768px)').matches) {
     // Animación para móviles
     tl.fromTo(
       cardMobileRef.current,
-      { y: 100, opacity: 0, visibility: "hidden" },
+      { y: 100, opacity: 0, visibility: 'hidden' },
       {
         y: 0,
         opacity: 1,
-        visibility: "visible",
+        visibility: 'visible',
         duration: 0.8,
-        ease: "power2",
+        ease: 'power2',
         stagger: 0.2,
       },
-      "-=0.5"
-    );
+      '-=0.5'
+    )
   } else {
     // Animación para pantallas grandes
     tl.fromTo(
       cardsRef.current,
-      { y: 100, opacity: 0, visibility: "hidden" },
+      { y: 100, opacity: 0, visibility: 'hidden' },
       {
         y: 0,
         opacity: 1,
-        visibility: "visible",
+        visibility: 'visible',
         duration: 0.8,
-        ease: "power2",
+        ease: 'power2',
         stagger: 0.2,
       },
-      "-=0.8"
-    );
+      '-=0.8'
+    )
   }
 
   gsap.fromTo(
     github.current,
-    { y: 100, opacity: 0, visibility: "hidden" },
+    { y: 100, opacity: 0, visibility: 'hidden' },
     {
       y: 0,
       opacity: 1,
-      visibility: "visible",
+      visibility: 'visible',
       duration: 0.8,
-      ease: "power2",
+      ease: 'power2',
       scrollTrigger: {
         trigger: container.current,
-        start: "center 50%",
-        end: "bottom top",
+        start: 'center 50%',
+        end: 'bottom top',
         // markers: true,
       },
     }
-  );
-};
+  )
+}
 //Animaciones MyServices
 export const servicesAnimation = ({ container, title, cardsRef }) => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: container.current,
-      start: "top 80%",
-      end: "bottom bottom",
+      start: 'top 80%',
+      end: 'bottom bottom',
     },
-  });
+  })
 
   tl.fromTo(
     title.current,
-    { y: 100, opacity: 0, visibility: "hidden" },
+    { y: 100, opacity: 0, visibility: 'hidden' },
     {
       y: 0,
       opacity: 1,
-      visibility: "visible",
+      visibility: 'visible',
       duration: 1.5,
-      ease: "power3.out",
+      ease: 'power3.out',
     }
   ).fromTo(
     cardsRef.current,
-    { y: 100, opacity: 0, visibility: "hidden" },
+    { y: 100, opacity: 0, visibility: 'hidden' },
     {
       y: 0,
       opacity: 1,
-      visibility: "visible",
+      visibility: 'visible',
       duration: 1,
-      ease: "power3.out",
+      ease: 'power3.out',
       stagger: 0.2,
     },
-    "-=1"
-  );
-};
+    '-=1'
+  )
+}
 //Animaciones ContactMe
 export const contactMeAnimation = ({
   container,
@@ -229,23 +229,23 @@ export const contactMeAnimation = ({
     {
       y: 100,
       opacity: 0,
-      visibility: "hidden",
+      visibility: 'hidden',
     },
     {
       opacity: 1,
       y: 0,
-      visibility: "visible",
-      ease: "power3.out",
+      visibility: 'visible',
+      ease: 'power3.out',
       duration: 1,
       stagger: 0.3,
       scrollTrigger: {
         trigger: container.current,
-        start: "top 80%",
-        end: "bottom bottom",
+        start: 'top 80%',
+        end: 'bottom bottom',
       },
     }
-  );
-};
+  )
+}
 //Animaciones detail projects
 export const detailAnimation = ({
   container_one,
@@ -265,19 +265,19 @@ export const detailAnimation = ({
     {
       y: 100,
       opacity: 0,
-      visibility: "hidden",
+      visibility: 'hidden',
     },
     {
       opacity: 1,
       y: 0,
-      visibility: "visible",
-      ease: "power3.out",
+      visibility: 'visible',
+      ease: 'power3.out',
       duration: 1.5,
       stagger: 0.3,
       delay: 0.5,
     }
-  );
-};
+  )
+}
 //Animaciones footer
 export const footerAnimation = ({
   container,
@@ -293,64 +293,64 @@ export const footerAnimation = ({
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: container.current,
-      start: "top 90%",
-      end: "bottom bottom",
+      start: 'top 90%',
+      end: 'bottom bottom',
       // markers: true,
     },
-  });
+  })
 
   tl.fromTo(
     [user.current, paragraph.current, list_one.current, list_two.current],
     {
       y: 50,
       opacity: 0,
-      visibility: "hidden",
+      visibility: 'hidden',
     },
     {
       opacity: 1,
       y: 0,
-      visibility: "visible",
-      ease: "power3.out",
+      visibility: 'visible',
+      ease: 'power3.out',
       duration: 1,
       stagger: 0.2,
     }
-  );
+  )
 
   tl.fromTo(
     line.current,
     {
-      width: "0%",
+      width: '0%',
       opacity: 0,
-      visibility: "hidden",
+      visibility: 'hidden',
     },
     {
-      width: "100%",
-      visibility: "visible",
+      width: '100%',
+      visibility: 'visible',
       opacity: 1,
-      ease: "none",
+      ease: 'none',
       duration: 1,
     },
-    "<"
-  );
+    '<'
+  )
 
   tl.fromTo(
     [copyrigth_one.current, copyrigth_two.current, copyrigth_three.current],
     {
       x: 100,
       opacity: 0,
-      visibility: "hidden",
+      visibility: 'hidden',
     },
     {
       opacity: 1,
       x: 0,
-      visibility: "visible",
-      ease: "power3.out",
+      visibility: 'visible',
+      ease: 'power3.out',
       duration: 1.2,
       stagger: 0.2,
     },
-    "<"
-  );
-};
+    '<'
+  )
+}
 //Animaciones formContact
 export const animateFormContact = ({
   subtitleRef,
@@ -368,16 +368,16 @@ export const animateFormContact = ({
     {
       y: 100,
       opacity: 0,
-      visibility: "hidden",
+      visibility: 'hidden',
     },
     {
       opacity: 1,
       y: 0,
-      visibility: "visible",
-      ease: "power3.out",
+      visibility: 'visible',
+      ease: 'power3.out',
       duration: 1.5,
       stagger: 0.3,
       delay: 0.5,
     }
-  );
-};
+  )
+}

@@ -3,7 +3,7 @@
   max-width: 1440px;
   height: auto;
   padding: 200px 0px 100px 0px;
-  background-image: url("./../../assets/images/background.webp");
+  background-image: url('./../../assets/images/background.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -24,12 +24,14 @@
 .content_text span {
   font-size: 18px;
   font-weight: 300;
+  visibility: hidden;
 }
 
 .content_text .content_title {
   display: flex;
   flex-direction: column;
   align-items: center;
+  visibility: hidden;
 }
 
 .content_text .content_title h1,
@@ -66,6 +68,7 @@
   font-weight: 300;
   line-height: 30px;
   text-wrap: balance;
+  visibility: hidden;
 }
 
 @media (max-width: 1300px) {
