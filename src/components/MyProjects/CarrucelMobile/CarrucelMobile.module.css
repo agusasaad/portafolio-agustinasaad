@@ -34,14 +34,14 @@
 
 @media (max-width: 600px) {
   .slider img {
-    width: 400px;
+    width: 340px;
     height: 450px;
     border-radius: 15px;
     object-fit: cover;
     object-position: center;
   }
 }
-
+/* 
 @media (max-width: 425px) {
   .slider img {
     width: 340px;
@@ -50,4 +50,4 @@
     object-fit: cover;
     object-position: center;
   }
-}
+} */
