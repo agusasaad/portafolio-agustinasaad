@@ -8,13 +8,13 @@
 .slider::-webkit-scrollbar {
   scrollbar-width: none;
 }
-.slider img {
+/* .slider img {
   width: 500px;
   height: 550px;
   border-radius: 15px;
   object-fit: cover;
   object-position: center;
-}
+} */
 
 .slider .move {
   display: flex;
@@ -32,16 +32,16 @@
   }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .slider img {
-    width: 340px;
+    width: 400px;
     height: 450px;
     border-radius: 15px;
     object-fit: cover;
     object-position: center;
   }
 }
-/* 
+
 @media (max-width: 425px) {
   .slider img {
     width: 340px;
