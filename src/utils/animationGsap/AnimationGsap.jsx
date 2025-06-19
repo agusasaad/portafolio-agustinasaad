@@ -56,8 +56,8 @@ export const mainPageAnimation = ({
     ],
     {
       y: 100,
-      // opacity: 0,
-      // visibility: "hidden",
+      opacity: 0,
+      visibility: 'hidden',
     },
     {
       opacity: 1,
