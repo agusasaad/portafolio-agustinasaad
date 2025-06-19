@@ -1,6 +1,7 @@
 @font-face {
-  font-family: "AvenirNextBold";
-  src: url("./../fonts/AvenirNext-Bold.ttf") format("truetype");
+  font-family: 'AvenirNextBold';
+  src: url('./../fonts/AvenirNext-Bold.ttf') format('truetype');
+  font-display: swap;
 }
 
 :root {
@@ -11,7 +12,7 @@
   --icon: #9b9db4;
   --border: rgb(29, 32, 33);
   --bg: rgb(12, 12, 15);
-  --main-title: "AvenirNextBold", sans-serif;
+  --main-title: 'AvenirNextBold', sans-serif;
 }
 
 * {
